@@ -4,6 +4,7 @@ from play_maker_funcs import name_extract
 import pandas as pd
 import numpy as np
 import ssl
+from io import StringIO
 
 
 # Ignore SSL certificate errors
@@ -66,7 +67,7 @@ def presto_parser(soup):
     df['qtr_first_row'] = df.index.isin(qtr_starts)
     df['drive_first_row'] = df['qtr_first_row']
     df['drive_first_row'] = np.where((df['dd_str'] == df['play_str']) & 
-                                     (df['play_str'].str.contains('at \d{2}:\d{2}')),True,df['drive_first_row'])
+                                     (df['play_str'].str.contains(r'at \d{2}:\d{2}')),True,df['drive_first_row'])
     df.drop(tops, axis = 0, inplace = True)
     df.drop('top', axis = 1, inplace = True)
     df.reset_index(drop = True, inplace = True)
@@ -108,7 +109,7 @@ def get_info_dict(box_soup, player_map, name_patterns, presto = False):
 
 def get_roster(roster_soup, presto = False):
     if not presto:
-        roster = [table for table in pd.read_html(str(roster_soup)) if len(table) > 0][0]
+        roster = [table for table in pd.read_html(StringIO(str(roster_soup))) if len(table) > 0][0]
         split_cols = [col for col in roster.columns if '/' in col]
         for col in split_cols:
             split_df = roster[col].str.split(pat = ' / ', expand = True).apply(lambda x: x.str.strip())
@@ -126,10 +127,10 @@ def get_roster(roster_soup, presto = False):
             split_df.columns = [colname.strip() for colname in col.split(sep = '/')]
             roster = pd.concat((roster, split_df), axis = 1).drop(split_cols, axis = 1)
         schools = pd.DataFrame()
-        if roster['High School'].str.contains('\(').any():
-            schools = roster['High School'].str.split(pat = ' \(', expand = True)
+        if roster['High School'].str.contains(r'\(').any():
+            schools = roster['High School'].str.split(pat = r' \(', expand = True)
             schools.columns = ['high_school', 'prev_school']
-            schools['prev_school'] = schools.prev_school.str.replace('\)','', regex = True)
+            schools['prev_school'] = schools.prev_school.str.replace(r'\)','', regex = True)
             if schools.prev_school.str.contains(',').any():
                 prev_schools = schools.prev_school.str.split(pat = ',', expand = True)
                 prev_schools.columns = (['prev_school'] + 

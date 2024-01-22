@@ -9,6 +9,7 @@ import numpy as np
 import re
 from play_maker_funcs import name_extract, kick_extract, fumble_df, slice_fum_str, regex_check
 from presto_prep import presto_parser
+from io import StringIO
 
 
 
@@ -20,7 +21,7 @@ def play_maker(soup, name_patterns, presto = False):
         df = pd.DataFrame()
         for section in quarter_sections:
             html = str(section)
-            drives = pd.read_html(html)
+            drives = pd.read_html(StringIO(str(html)))
             # Ensure that each drive df has 2 columns, and mark the beginning of each quarter and drive
             for i in range(len(drives)):
                 drive = drives[i]
@@ -42,8 +43,8 @@ def play_maker(soup, name_patterns, presto = False):
     # Clean strings by eliminating multiple spaces between words
     df['dd_str'] = df['dd_str'].str.split().str.join(sep = ' ')
     # Extract down, distance and yard line from d&d string
-    dd_pattern = "(?P<down>[1-4])[dhnrst]{2} and (?P<dist>\d{1,2}|GOAL) at "
-    at_yl_pattern = " at (?P<terr>[A-Z']+(?:\d{4}|\d{2})?)(?P<yl_raw>[0-9]{1,2})"
+    dd_pattern = r"(?P<down>[1-4])[dhnrst]{2} and (?P<dist>\d{1,2}|GOAL) at "
+    at_yl_pattern = r" at (?P<terr>[A-Z']+(?:\d{4}|\d{2})?)(?P<yl_raw>[0-9]{1,2})"
     df_dd = df['dd_str'].str.extract(dd_pattern)
     df_yl = df['dd_str'].str.extract(at_yl_pattern)
     df = pd.concat((df,df_dd,df_yl), axis=1)
@@ -65,9 +66,9 @@ def play_maker(soup, name_patterns, presto = False):
     df_rusher = name_extract(df['play_str'],"^",rush_dir_pat, name_patterns, prefix = 'rusher_')
     # Get gain/loss and yardline rushed to info
     rush_pat2 = " rush" + "(?:{}|{})?".format(direction_pat1, direction_pat2)
-    run_gl_pat = " for (?:loss of )?(?P<run_gain>\d{1,2}) yards?(?: gain| loss)?"
-    run_ng_pat = " for (?P<run_gain>no gain)"
-    run_to_pat = " to the (?P<run_to_terr>(?:[A-Z']+)?(?:\d{4}|\d{2})?)(?P<run_to_yl>[0-9]{1,2})"
+    run_gl_pat = r" for (?:loss of )?(?P<run_gain>\d{1,2}) yards?(?: gain| loss)?"
+    run_ng_pat = r" for (?P<run_gain>no gain)"
+    run_to_pat = r" to the (?P<run_to_terr>(?:[A-Z']+)?(?:\d{4}|\d{2})?)(?P<run_to_yl>[0-9]{1,2})"
     # Create separate outputs for clear gains/losses and no gains, then overlay the latter into the former
     df_gains = df['play_str'].str.extract(rush_pat2 + run_gl_pat + run_to_pat).fillna('')
     df_noGain = df['play_str'].str.extract(rush_pat2 + run_ng_pat + run_to_pat).fillna('')
@@ -95,8 +96,8 @@ def play_maker(soup, name_patterns, presto = False):
     # Get intended receiver info
     df_intended = name_extract(df['play_str']," pass (?:in)?complete.* to ",'', name_patterns, prefix = 'intended_')
     # If pass is intercepted, get interceptor info
-    int_start_pat = " pass intercepted by "
-    int_end_pat = " at the (?P<int_terr>[A-Z\d']+?)(?P<int_yl>[0-9]{1,2})"
+    int_start_pat = r" pass intercepted by "
+    int_end_pat = r" at the (?P<int_terr>[A-Z\d']+?)(?P<int_yl>[0-9]{1,2})"
     df_interceptedBy = name_extract(df['play_str'],int_start_pat,int_end_pat, name_patterns, prefix = 'intBy_')
     # Get player info for hurries and pass break-ups
     df_brokenUpBy = name_extract(df['play_str'],' broken up by','', name_patterns,prefix = 'pbuBy_')
@@ -131,7 +132,7 @@ def play_maker(soup, name_patterns, presto = False):
             for col in df_xp:
                 df_xp[col] = df_xp[col] + df_xp_type[col]
     
-    fg_result_pat = ' field goal attempt from (?P<fg_dist>\d{1,2})(?: yards?)? (?P<fg_result>'+ fg_result_str + ')'
+    fg_result_pat = r' field goal attempt from (?P<fg_dist>\d{1,2})(?: yards?)? (?P<fg_result>'+ fg_result_str + ')'
     df_fg = name_extract(df['play_str'], '^', ' field goal attempt', name_patterns, prefix = 'fg_' )
     df_fg = pd.concat((df_fg, df['play_str'].str.extract(fg_result_pat, flags = re.IGNORECASE)), axis = 1).fillna('')
     
@@ -146,9 +147,9 @@ def play_maker(soup, name_patterns, presto = False):
     
     # Extract return info
     df_return = name_extract(df['play_str'], '', ' return', name_patterns, prefix = 'retBy_')
-    df_retYards = df['play_str'].str.extract("return (?P<ret_yards>\d{1,2}) yard(?:s)?")
+    df_retYards = df['play_str'].str.extract(r"return (?P<ret_yards>\d{1,2}) yard(?:s)?")
     #yl_str = "return .*? to the (?P<ret_terr>[A-Z\d']+?)(?P<ret_yl>[0-9]{1,2})"
-    ret_to_pat = "return .*?" + run_to_pat.replace('run_to', 'ret')
+    ret_to_pat = r"return .*?" + run_to_pat.replace('run_to', 'ret')
     df_retYL = df['play_str'].str.extract(ret_to_pat)
     df_return = pd.concat((df_return, df_retYards, df_retYL), axis = 1)
     df = pd.concat((df, df_xp, df_kp, df_fg, df_blocked, df_muffed, df_return), axis = 1)
@@ -156,7 +157,7 @@ def play_maker(soup, name_patterns, presto = False):
     # Extract tackler info
     df['tackle_str'] = df['play_str'].str.extract('(.*)(?:PENALTY.*)$')
     df['tackle_str'] = np.where(df['tackle_str'].isna(), df['play_str'], df['tackle_str'])
-    tackler_strings = df['tackle_str'].str.extract("\((.*)\)").squeeze().str.strip().fillna('')
+    tackler_strings = df['tackle_str'].str.extract(r"\((.*)\)").squeeze().str.strip().fillna('')
     tackler_df = tackler_strings.str.split(pat = ';', expand = True).fillna('')
     df_tackler1 = name_extract(tackler_df[0], '', '', name_patterns, prefix = 'tackler1_')
     df_tackler2 = name_extract(tackler_df[1], '', '', name_patterns, prefix = 'tackler2_')
@@ -164,9 +165,9 @@ def play_maker(soup, name_patterns, presto = False):
     # Extract penalty info
     df['pen_str'] = df['play_str'].str.extract('(PENALTY.*)', flags = re.IGNORECASE)
     df['presnap_pen'] = df['play_str'].str.startswith('PENALTY').replace({True: 1, False: np.NaN})
-    player_pen_strings = df['pen_str'].str.extract("\((.*)\)").squeeze().str.strip().fillna('')
+    player_pen_strings = df['pen_str'].str.extract(r"\((.*)\)").squeeze().str.strip().fillna('')
     df_pen = name_extract(player_pen_strings, '', '', name_patterns, prefix = 'penOn_')
-    pen_pat = "PENALTY (?P<pen_team>[A-Z'\d]+) (?P<penalty>[a-zA-Z ]+[a-zA-Z])? ?(?P<pen_yards>\d{1,2})"
+    pen_pat = r"PENALTY (?P<pen_team>[A-Z'\d]+) (?P<penalty>[a-zA-Z ]+[a-zA-Z])? ?(?P<pen_yards>\d{1,2})"
     df_pen = pd.concat((df_pen,df['pen_str'].str.extract(pen_pat)), axis = 1)
     
     
@@ -188,7 +189,7 @@ def play_maker(soup, name_patterns, presto = False):
     df = pd.concat((df, df_tackler1, df_tackler2, df_fum, df_pen), axis = 1)
     
     # Extract non-fumble recoveries (on-side)
-    recov_by_pat = "recovered by (?P<recovery_team>[A-Z\d']+) "
+    recov_by_pat = r"recovered by (?P<recovery_team>[A-Z\d']+) "
     recov_ser = df['play_str'].str.extract(recov_by_pat).fillna('').squeeze()
     df['recovery_team'] = np.where(df.fumble_num.isna(), recov_ser, df.recovery_team)
     
@@ -196,7 +197,7 @@ def play_maker(soup, name_patterns, presto = False):
     # Get times where posted
     df['game_clock'] = ''
     for token in (' at', ' clock'):
-        time_series = df['play_str'].str.extract(token + ' (\d{1,2}:\d{2})').squeeze().fillna('')
+        time_series = df['play_str'].str.extract(token + r' (\d{1,2}:\d{2})').squeeze().fillna('')
         df['game_clock'] = df.game_clock + time_series
     df['game_clock'] = df['game_clock'].replace('', np.NaN).ffill().bfill()
     

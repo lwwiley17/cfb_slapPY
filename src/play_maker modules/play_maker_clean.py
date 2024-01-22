@@ -20,9 +20,10 @@ from play_maker_funcs import (name_patterns, possession, possession_final, point
 
 
 pd.set_option('display.max_columns', None)
-url = 'https://godiplomats.com/sports/football/stats/2023/lebanon-valley-college/boxscore/12182'
-#url = 'https://muhlenbergsports.com/sports/football/stats/2023/moravian/boxscore/5074'
-#url = 'https://bryantbulldogs.com/sports/fball/2023-24/boxscores/20230909_f6un.xml'
+# url = 'https://godiplomats.com/sports/football/stats/2023/lebanon-valley-college/boxscore/12182'
+url = 'https://muhlenbergsports.com/sports/football/stats/2023/moravian/boxscore/5074'
+# url = 'https://bryantbulldogs.com/sports/fball/2023-24/boxscores/20230909_f6un.xml'
+# url = 'https://mgoblue.com/sports/football/stats/2023/iowa/boxscore/26469'
 # BS object of just the play-by-play
 soup = pot(headers, url, strainer = SoupStrainer(id='play-by-play'))
 presto = False
@@ -121,7 +122,7 @@ for role in ('passer', 'rusher', 'intended', 'kicker'):
         print(role, e)
 team_cat_ordered = CategoricalDtype(categories = sorted(teams + ['']), ordered = True)
 df['poss'] = df.poss.astype(team_cat_ordered)
-df['drive_poss'] = df.groupby('drive_num')['poss'].transform(max)
+df['drive_poss'] = df.groupby('drive_num')['poss'].transform('max')
 df['poss'] = np.where(df.drive_count == 0, df.drive_poss, df.poss.replace('', np.NaN))
 df['poss'] = df.poss.ffill()
 
@@ -140,7 +141,7 @@ df['pbuBy'] = df.pbuBy + pbu
 df['tackler1'] = np.where(pbu != '', '', df.tackler1)
 
 # Add KO/Punt Result
-recov_by_pat = "recovered by (?P<recovery_team>[A-Z\d']+) "
+recov_by_pat = r"recovered by (?P<recovery_team>[A-Z\d']+) " # where is this used?
 df['kick_result'] = df.apply(kick_result, axis = 1)
 
 # Associate timeouts with the previous play
@@ -151,7 +152,7 @@ df['timeout'] = df.timeout.shift(-1)
 df['poss_final'] = df.apply(possession_final, args = (teams,), axis = 1)
     
 # Create player map to be used in determining home and away team
-players = df[['rusher', 'passer', 'kicker']].agg(sum, axis = 1).rename('player')
+players = df[['rusher', 'passer', 'kicker']].agg('sum', axis = 1).rename('player')
 player_map = pd.concat((players, df.poss), axis = 1).drop_duplicates() 
 player_map = player_map[(player_map.player != '') & (player_map.poss != '')].set_index('player').squeeze()
 # Get game-level box score info and roster info
@@ -166,12 +167,15 @@ else:
 info_dict = get_info_dict(box_soup, player_map, name_patterns, presto = presto)
 roster = get_roster(roster_soup, presto = presto)
 
-url_root_list = re.findall('https?://(?:www.)?(.*?)/', url)
+url_root_list = re.findall(r'https?://(?:www.)?(.*?)/', url)
 if url_root_list:
     url_root_curr = url_root_list[0]
-    teams_info = pd.read_csv('d3info.csv', index_col = 0)
-    url_root_map = pd.Series(teams_info.School.values, index = teams_info.url_root).to_dict()
+    teams_info = pd.read_csv('data\\imports\\d3info.csv')
+    
+    # pulling the root website out of the season's link
+    url_root_map = pd.Series(teams_info.School.values, index = teams_info["2022 Link"].str.extract(r'https?://(?:www.)?(.*?)/',expand=False)).to_dict()
     url_team = url_root_map[url_root_curr]
+    
     if fuzz.ratio(url_team, info_dict['home_team']) > fuzz.ratio(url_team, info_dict['away_team']):
         url_side = 'home'
     else:
@@ -202,7 +206,7 @@ view_cols = ['quarter', 'game_clock', 'drive_num', 'drive_count', 'poss',
             'away_points', 'home_points']
 view_cols = [col for col in view_cols if col in df.columns]
 view = df[view_cols] 
-view.to_csv('df_temp.csv')
+view.to_csv('df_temp.csv', index=False)
 export = view[view.play_type.str.len() > 0].copy()
 
 gc = pd.to_datetime(export.game_clock, format = '%M:%S')
@@ -210,9 +214,9 @@ next_time = export.groupby('quarter')['game_clock'].shift(-1).fillna('00:00')
 gcn = pd.to_datetime(next_time, format = '%M:%S')
 grpBy = export.groupby(['quarter','game_clock'])
 export['time_elapsed_next'] = gc - gcn
-export['time_elapsed_chunk'] = grpBy['time_elapsed_next'].transform(max)
+export['time_elapsed_chunk'] = grpBy['time_elapsed_next'].transform('max')
 export['play_units'] = export.apply(play_duration, axis = 1)
-export['play_units_chunk'] = grpBy['play_units'].transform(sum)
+export['play_units_chunk'] = grpBy['play_units'].transform('sum')
 export['play_unit_duration'] = export.time_elapsed_chunk / export.play_units_chunk
 export['play_duration'] = export.play_unit_duration * export.play_units
 export['cum_play_duration'] = grpBy['play_duration'].cumsum().round('1s')
@@ -229,6 +233,4 @@ export = export.drop(labels = ['time_elapsed_next', 'time_elapsed_chunk', 'play_
 away_pass = export[(export.poss == info_dict['away_abbr']) & (export.play_type == 'Pass')]
 
  
-export.to_csv('sample_export.csv')
-
-
+export.to_csv('sample_export.csv',index=False)
