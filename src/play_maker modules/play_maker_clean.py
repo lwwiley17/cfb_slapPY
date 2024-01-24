@@ -21,9 +21,12 @@ from play_maker_funcs import (name_patterns, possession, possession_final, point
 
 pd.set_option('display.max_columns', None)
 # url = 'https://godiplomats.com/sports/football/stats/2023/lebanon-valley-college/boxscore/12182'
-url = 'https://muhlenbergsports.com/sports/football/stats/2023/moravian/boxscore/5074'
-# url = 'https://bryantbulldogs.com/sports/fball/2023-24/boxscores/20230909_f6un.xml'
+# url = 'https://muhlenbergsports.com/sports/football/stats/2023/moravian/boxscore/5074'
+url = 'https://bryantbulldogs.com/sports/fball/2023-24/boxscores/20230909_f6un.xml'
 # url = 'https://mgoblue.com/sports/football/stats/2023/iowa/boxscore/26469'
+# url = 'https://www.ecgulls.com/sports/fball/2023-24/boxscores/20230922_4bl7.xml'
+
+
 # BS object of just the play-by-play
 soup = pot(headers, url, strainer = SoupStrainer(id='play-by-play'))
 presto = False
@@ -31,6 +34,7 @@ if len(soup) < 1:
     soup = pot(headers, url + '?view=plays', strainer = SoupStrainer(class_='stats-fullbox clearfix'))
     soup = soup.find_all('table')[1]
     presto = True
+    print('presto is true')
 # fname = 'lyco_pbp.html'
 # with open(fname, 'r') as infile:
 #     html = infile.read()
@@ -159,7 +163,7 @@ player_map = player_map[(player_map.player != '') & (player_map.poss != '')].set
 if presto:
     box_soup = pot(headers, url)
     rurl = url[:url.find('boxscores')] + 'roster'
-    roster_soup = pot(headers, rurl, strainer = SoupStrainer(class_='table-responsive'))
+    roster_soup = pot(headers, rurl)
 else:
     box_soup = pot(headers, url, strainer = SoupStrainer(id='box-score'))
     rurl = url[:url.find('stats')] + 'roster'

@@ -59,7 +59,7 @@ def presto_parser(soup):
 
     '''
     html = str(soup)
-    df = pd.read_html(html)[0]
+    df = pd.read_html(StringIO(str(html)))[0]
     df.columns = ['dd_str', 'play_str']
     df['top'] = np.where(df['dd_str'] == 'back to top',1,0)
     tops = list(df[df['top'] == 1].index)
@@ -86,7 +86,7 @@ def get_info_dict(box_soup, player_map, name_patterns, presto = False):
         info_dict.update(dict(zip(keys,values)))
     else:
         off_player_box = box_soup.find_all(class_='stats-fullbox clearfix')[-2]
-        box_dfs = pd.read_html(str(off_player_box))
+        box_dfs = pd.read_html(StringIO(str(off_player_box)))
         names = box_dfs[0].iloc[0].tolist()
         box_indices = (1,3,7,9,11)
         abbrs = []
@@ -116,15 +116,27 @@ def get_roster(roster_soup, presto = False):
             split_df.columns = [colname.strip() for colname in col.split(sep = '/')]
             roster = pd.concat((roster, split_df), axis = 1).drop(split_cols, axis = 1)
     else:
-        roster_raw = pd.read_html(str(roster_soup))[0]
-        full_name = roster_raw.iloc[:,2].str.replace('  ', ' ', regex = True).rename('Name')
+        roster_raw = pd.read_html(StringIO(str(roster_soup)))[0]
+        # roster_raw = roster_raw.drop(['Major'], axis =1)
+        
+        # full_name = roster_raw.iloc[:,2].str.replace('  ', ' ', regex = True).rename('Name')
+        full_name = roster_raw['Name'].head()
+
         roster = roster_raw.iloc[:,3:]
+        print('roster:', roster)
+
         roster.columns = roster_raw.columns.values[2:-1]
+        print('columsn:', roster.columns)
+
         split_cols = [col for col in roster.columns if '/' in col]
+        print('split_cols:',split_cols)
         roster = roster.apply(lambda x: x.str.replace(x.name + ': ', '', regex = True))
         for col in split_cols:
+            print(col)
             split_df = roster[col].str.split(pat = ' / ', expand = True).apply(lambda x: x.str.strip())
+            print(split_df.head(20))
             split_df.columns = [colname.strip() for colname in col.split(sep = '/')]
+            print(split_df.columns)
             roster = pd.concat((roster, split_df), axis = 1).drop(split_cols, axis = 1)
         schools = pd.DataFrame()
         if roster['High School'].str.contains(r'\(').any():
