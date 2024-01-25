@@ -176,14 +176,42 @@ if url_root_list:
     url_root_curr = url_root_list[0]
     teams_info = pd.read_csv('data\\imports\\d3info.csv')
     
+
+
+
     # pulling the root website out of the season's link
     url_root_map = pd.Series(teams_info.School.values, index = teams_info["2022 Link"].str.extract(r'https?://(?:www.)?(.*?)/',expand=False)).to_dict()
-    url_team = url_root_map[url_root_curr]
+
+    if url_root_curr not in url_root_map:
+        if fuzz.ratio(url_root_curr, info_dict['home_team']) > fuzz.ratio(url_root_curr, info_dict['away_team']):
+            url_team = info_dict['home_team']
+        else:
+            url_team = info_dict['home_team']
+        new_school = {
+            'School': [url_team],
+            'Nickname': [],
+            'Location': [],
+            'Conference': [],
+            'Region': [],
+            'Surface': [],
+            'Enrollment': [],
+            'Match':[],
+            '2021 Link':[],
+            '2022 Link': [url]
+        }
+        tmp = pd.DataFrame.from_dict(new_school,orient='index').transpose()
+        teams_info = pd.concat([teams_info,tmp]).reset_index()
+        teams_info.to_csv('data\\imports\\d3info.csv',index=False)
+    else: 
+        url_team = url_root_map[url_root_curr]
     
     if fuzz.ratio(url_team, info_dict['home_team']) > fuzz.ratio(url_team, info_dict['away_team']):
         url_side = 'home'
     else:
         url_side = 'away'
+
+
+
         
 off_roles = df.melt(value_vars = ['passer', 'rusher', 'intended']).groupby('value').value_counts()
 

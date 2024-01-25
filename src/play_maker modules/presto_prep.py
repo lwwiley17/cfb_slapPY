@@ -117,30 +117,36 @@ def get_roster(roster_soup, presto = False):
             roster = pd.concat((roster, split_df), axis = 1).drop(split_cols, axis = 1)
     else:
         roster_raw = pd.read_html(StringIO(str(roster_soup)))[0]
-        # roster_raw = roster_raw.drop(['Major'], axis =1)
+        if 'Major' in roster_raw.columns:
+            roster_raw = roster_raw.drop(['Major'], axis=1)
         
+        print(roster_raw.head())
         # full_name = roster_raw.iloc[:,2].str.replace('  ', ' ', regex = True).rename('Name')
-        full_name = roster_raw['Name'].head()
+        full_name = roster_raw['Name']
+        # print(full_name.head())
 
-        roster = roster_raw.iloc[:,3:]
-        print('roster:', roster)
+        # spliting columns that have a /
+        split_cols = [col for col in roster_raw.columns if '/' in col]
 
-        roster.columns = roster_raw.columns.values[2:-1]
-        print('columsn:', roster.columns)
+        # sometimes a first column is numbers, shifting all column names to the right
+        if 'Unnamed' in roster_raw.columns[-1]:
+            temp_col = roster_raw.columns[:-1]
+            roster_raw = roster_raw.drop(roster_raw.columns[0], axis=1)
+            roster_raw.columns = temp_col
 
-        split_cols = [col for col in roster.columns if '/' in col]
-        print('split_cols:',split_cols)
-        roster = roster.apply(lambda x: x.str.replace(x.name + ': ', '', regex = True))
+
+        # removing a hidden {col_name} : from each entry
+        roster_raw = roster_raw.apply(lambda x: x.str.replace(x.name + ': ', '', regex = True) if type(x) == 'str' else x)
+        
+        # splittiing typically hometown / high school
         for col in split_cols:
-            print(col)
-            split_df = roster[col].str.split(pat = ' / ', expand = True).apply(lambda x: x.str.strip())
-            print(split_df.head(20))
+            split_df = roster_raw[col].str.split(pat = ' / ', expand = True).apply(lambda x: x.str.strip())
             split_df.columns = [colname.strip() for colname in col.split(sep = '/')]
-            print(split_df.columns)
-            roster = pd.concat((roster, split_df), axis = 1).drop(split_cols, axis = 1)
+            roster_raw = pd.concat((roster_raw, split_df), axis = 1).drop(split_cols, axis = 1)
+        
         schools = pd.DataFrame()
-        if roster['High School'].str.contains(r'\(').any():
-            schools = roster['High School'].str.split(pat = r' \(', expand = True)
+        if roster_raw['High School'].str.contains(r'\(').any():
+            schools = roster_raw['High School'].str.split(pat = r' \(', expand = True)
             schools.columns = ['high_school', 'prev_school']
             schools['prev_school'] = schools.prev_school.str.replace(r'\)','', regex = True)
             if schools.prev_school.str.contains(',').any():
@@ -149,14 +155,14 @@ def get_roster(roster_soup, presto = False):
                                         [f'prev_school{i}' for i in range(2,len(prev_schools.columns)+1)])
                 schools = pd.concat((schools.iloc[:,0],prev_schools), axis = 1)
         roster = pd.concat((roster_raw.iloc[:,0], full_name, 
-                            roster.iloc[:,:-1], schools), axis = 1).fillna('')
-        roster.columns = roster.columns.str.title()
+                            roster_raw.iloc[:,:-1], schools), axis = 1).fillna('')
+        roster_raw.columns = roster_raw.columns.str.title()
     col_map = {'#': 'No.', 'Name': 'Full_Name', 'Full Name': 'Full_Name', 
                'Cl.': 'Yr.', 'High School': 'High_School'}    
-    roster = roster.rename(columns = col_map)
-    roster['Yr.'] = roster['Yr.'].replace('FY', 'Fr.')
+    roster_raw = roster_raw.rename(columns = col_map)
+    roster_raw['Yr.'] = roster_raw['Yr.'].replace('FY', 'Fr.')
     roster_cols = ['No.', 'Full_Name', 'Yr.', 'Pos.', 'Ht.', 'Wt.', 'Hometown', 'High_School']
-    return roster[roster_cols]
+    return roster_raw[roster_cols]
         
         
         
