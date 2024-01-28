@@ -22,19 +22,25 @@ from play_maker_funcs import (name_patterns, possession, possession_final, point
 pd.set_option('display.max_columns', None)
 # url = 'https://godiplomats.com/sports/football/stats/2023/lebanon-valley-college/boxscore/12182'
 # url = 'https://muhlenbergsports.com/sports/football/stats/2023/moravian/boxscore/5074'
-url = 'https://bryantbulldogs.com/sports/fball/2023-24/boxscores/20230909_f6un.xml'
+# url = 'https://bryantbulldogs.com/sports/fball/2023-24/boxscores/20230909_f6un.xml'
 # url = 'https://mgoblue.com/sports/football/stats/2023/iowa/boxscore/26469'
 # url = 'https://www.ecgulls.com/sports/fball/2023-24/boxscores/20230922_4bl7.xml'
+# url = 'https://wnegoldenbears.com/sports/football/stats/2023/endicott-college/boxscore/8093'
+# url = 'https://eurekareddevils.com/sports/fball/2022-23/boxscores/20221015_crvm.xml'
+url = 'https://wcupagoldenrams.com/sports/football/stats/2023/bloomsburg-university/boxscore/9890'
 
 
 # BS object of just the play-by-play
 soup = pot(headers, url, strainer = SoupStrainer(id='play-by-play'))
 presto = False
+print(len(soup))
 if len(soup) < 1:
     soup = pot(headers, url + '?view=plays', strainer = SoupStrainer(class_='stats-fullbox clearfix'))
     soup = soup.find_all('table')[1]
     presto = True
-    print('presto is true')
+
+print('presto =',presto)
+
 # fname = 'lyco_pbp.html'
 # with open(fname, 'r') as infile:
 #     html = infile.read()
@@ -266,3 +272,4 @@ away_pass = export[(export.poss == info_dict['away_abbr']) & (export.play_type =
 
  
 export.to_csv('sample_export.csv',index=False)
+

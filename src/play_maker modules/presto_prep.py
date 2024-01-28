@@ -101,7 +101,12 @@ def get_info_dict(box_soup, player_map, name_patterns, presto = False):
         info_dict = {'away_team': names[0], 'home_team': names[1], 'away_abbr': abbrs[0], 'home_abbr': abbrs[1]}
         info_box = box_soup.find(class_='stats-fullbox summary other-info clearfix')
         info_strings = list(info_box.stripped_strings)
-        info_strings = info_strings[info_strings.index('Location:'):info_strings.index('Referee:')]
+
+        # some teams dont name officals... looking at you Eureka College
+        if 'Referee:' in info_strings:
+            info_strings = info_strings[info_strings.index('Location:'):info_strings.index('Referee:')]
+        else:
+            info_strings = info_strings[info_strings.index('Location:'):]
         keys = [string.replace(':','') for string in info_strings if string.find(':') > -1]
         values = [string for string in info_strings if string.find(':') == -1]
         info_dict.update(dict(zip(keys,values)))
@@ -109,21 +114,19 @@ def get_info_dict(box_soup, player_map, name_patterns, presto = False):
 
 def get_roster(roster_soup, presto = False):
     if not presto:
-        roster = [table for table in pd.read_html(StringIO(str(roster_soup))) if len(table) > 0][0]
-        split_cols = [col for col in roster.columns if '/' in col]
+        roster_raw = [table for table in pd.read_html(StringIO(str(roster_soup))) if len(table) > 0][0]
+        split_cols = [col for col in roster_raw.columns if '/' in col]
         for col in split_cols:
-            split_df = roster[col].str.split(pat = ' / ', expand = True).apply(lambda x: x.str.strip())
+            split_df = roster_raw[col].str.split(pat = ' / ', expand = True).apply(lambda x: x.str.strip())
             split_df.columns = [colname.strip() for colname in col.split(sep = '/')]
-            roster = pd.concat((roster, split_df), axis = 1).drop(split_cols, axis = 1)
+            roster_raw = pd.concat((roster_raw, split_df), axis = 1).drop(split_cols, axis = 1)
     else:
         roster_raw = pd.read_html(StringIO(str(roster_soup)))[0]
         if 'Major' in roster_raw.columns:
             roster_raw = roster_raw.drop(['Major'], axis=1)
         
-        print(roster_raw.head())
         # full_name = roster_raw.iloc[:,2].str.replace('  ', ' ', regex = True).rename('Name')
         full_name = roster_raw['Name']
-        # print(full_name.head())
 
         # spliting columns that have a /
         split_cols = [col for col in roster_raw.columns if '/' in col]
@@ -163,15 +166,3 @@ def get_roster(roster_soup, presto = False):
     roster_raw['Yr.'] = roster_raw['Yr.'].replace('FY', 'Fr.')
     roster_cols = ['No.', 'Full_Name', 'Yr.', 'Pos.', 'Ht.', 'Wt.', 'Hometown', 'High_School']
     return roster_raw[roster_cols]
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
