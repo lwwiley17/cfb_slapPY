@@ -17,27 +17,41 @@ from play_maker_base import play_maker
 from play_maker_funcs import (name_patterns, possession, possession_final, points_on_play, kick_result, 
                               play_duration, clean_direction)
 
+# new side arm stuff
+from new_side_arm_prep import nsa_pot, nsa_playmaker
+
 
 
 pd.set_option('display.max_columns', None)
 # url = 'https://godiplomats.com/sports/football/stats/2023/lebanon-valley-college/boxscore/12182'
 # url = 'https://muhlenbergsports.com/sports/football/stats/2023/moravian/boxscore/5074'
 # url = 'https://bryantbulldogs.com/sports/fball/2023-24/boxscores/20230909_f6un.xml'
-# url = 'https://mgoblue.com/sports/football/stats/2023/iowa/boxscore/26469'
+url = 'https://mgoblue.com/sports/football/stats/2023/iowa/boxscore/26469'
 # url = 'https://www.ecgulls.com/sports/fball/2023-24/boxscores/20230922_4bl7.xml'
 # url = 'https://wnegoldenbears.com/sports/football/stats/2023/endicott-college/boxscore/8093'
 # url = 'https://eurekareddevils.com/sports/fball/2022-23/boxscores/20221015_crvm.xml'
-url = 'https://wcupagoldenrams.com/sports/football/stats/2023/bloomsburg-university/boxscore/9890'
+# url = 'https://wcupagoldenrams.com/sports/football/stats/2023/bloomsburg-university/boxscore/9890'
 
 
 # BS object of just the play-by-play
 soup = pot(headers, url, strainer = SoupStrainer(id='play-by-play'))
+# print(soup.prettify())
 presto = False
-print(len(soup))
+print('len of soup', len(soup))
+# getting the box score for presto sport
 if len(soup) < 1:
     soup = pot(headers, url + '?view=plays', strainer = SoupStrainer(class_='stats-fullbox clearfix'))
-    soup = soup.find_all('table')[1]
-    presto = True
+    # if it is a presto box score
+    if len(soup.find_all('table')) > 1:
+        soup = soup.find_all('table')[1]
+        presto = True
+    # if it is not a presto box score
+    else:
+        soup, nombre = nsa_pot(url)
+        print(nombre)
+        new_nsa = True
+        
+
 
 print('presto =',presto)
 
@@ -46,7 +60,17 @@ print('presto =',presto)
 #     html = infile.read()
 # strainer = SoupStrainer(id='play-by-play')
 # soup = BeautifulSoup(html, "html.parser", parse_only = strainer)
-df = play_maker(soup, name_patterns, presto = presto)
+if new_nsa == False:
+    df = play_maker(soup, name_patterns, presto = presto)
+else:
+    df, nombre = nsa_playmaker(soup, nombre)
+    print('peaches')
+
+print(nombre)
+print(type(df))
+
+
+
 
 # Identify R/P/K play types
 df['play_type'] = np.where(df.play_str.str.contains(' rush'), 'Run', 
@@ -272,4 +296,6 @@ away_pass = export[(export.poss == info_dict['away_abbr']) & (export.play_type =
 
  
 export.to_csv('sample_export.csv',index=False)
+
+master_file='games.csv'
 

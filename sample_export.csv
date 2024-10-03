@@ -1,170 +1,185 @@
 quarter,game_clock,drive_num,drive_count,poss,down,dist,yl,terr,play_type,gain_loss,gnls_to_yl,gnls_to_terr,rusher,run_dir,passer,pass_dir,pass_depth,intended,pass_result,intBy,int_terr,int_yl,pbuBy,hurriedBy,kicker,kick_yards,kick_terr,kick_yl,kick_result,fg_dist,fg_result,xp_type,xp_result,retBy,ret_yards,ret_terr,ret_yl,tackler1,tackler2,fumble_num,fumbleBy,recoveredBy,recovery_team,recov_terr,recov_yl,presnap_pen,penalty,penOn,pen_team,pen_yards,touchdown,no_play,timeout,kneel,away_points_on_play,home_points_on_play,away_points,home_points,play_duration,est_game_clock,sec_remaining_half
-1,15:00,1,2,WCU,,,,,Kickoff,,,,,,,,,,,,,,,,Sean Henry,64,BLOOM,1,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:00,15:00,1800
-1,15:00,2,2,BLM,1,10,-35,BLM,Run,6.0,41,BLOOM,Kaleb Monaco,M,,,,,,,,,,,,,,,,,,,,,,,,Ayyub Dail,Khalib Slaughter,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:41,15:00,1800
-1,15:00,2,3,BLM,2,4,-41,BLM,Pass,4.0,45,BLOOM,,,KJ Riley,L, short,Owen Anderson,Complete,,,,,,,,,,,,,,,,,,,Darrell Brown,,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:21,14:19,1759
-1,15:00,2,4,BLM,1,10,-45,BLM,Penalty,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,False Start,,BLOOM,5,,1.0,,,0,0,0.0,0.0,00:21,13:58,1738
-1,15:00,2,5,BLM,1,15,-40,BLM,Run,2.0,42,BLOOM,Nadir McLeod,M,,,,,,,,,,,,,,,,,,,,,,,,Charley Mininger,Nate Desmond,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:41,13:38,1718
-1,15:00,2,6,BLM,2,13,-42,BLM,Pass,13.0,45,WCU,,,KJ Riley,R, short,Jerry Griffen-Batchler,Complete,,,,,,,,,,,,,,,,,,,Kaleb Brown,,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:21,12:57,1677
-1,15:00,2,7,BLM,1,10,45,WCU,Pass,0.0,,,,,KJ Riley,M, deep,Jerry Griffen-Batchler,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:21,12:36,1656
-1,15:00,2,8,BLM,2,10,45,WCU,Run,13.0,32,WCU,Kaleb Monaco,R,,,,,,,,,,,,,,,,,,,,,,,,Ayyub Dail,Connor Noble,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:41,12:16,1636
-1,15:00,2,9,BLM,1,10,17,WCU,Run,3.0,14,WCU,Kaleb Monaco,M,,,,,,,,,,,,,,,,,,,,,,,,Connor Noble,Khalib Slaughter,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:41,11:35,1595
-1,15:00,2,10,BLM,2,7,14,WCU,Run,8.0,6,WCU,Kaleb Monaco,R,,,,,,,,,,,,,,,,,,,,,,,,DeJuan Dandridge,,,,,,,,,,,,,,1.0,,,0,0,0.0,0.0,00:41,10:54,1554
-1,15:00,2,11,BLM,2,7,14,WCU,Run,2.0,12,WCU,Kaleb Monaco,M,,,,,,,,,,,,,,,,,,,,,,,,Nate Desmond,,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:41,10:13,1513
-1,15:00,2,12,BLM,3,5,12,WCU,Pass,7.0,5,WCU,,,KJ Riley,R, short,Jerry Griffen-Batchler,Complete,,,,,,,,,,,,,,,,,,,Sterlen Barr,,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:21,09:32,1472
-1,09:11,2,13,BLM,1,5,5,WCU,Run,5.0,0,WCU,Kaleb Monaco,M,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,,,,6,0,0.0,0.0,00:15,09:11,1451
-1,09:11,2,14,BLM,1,10,3,WCU,Extra Pt.,,,,,,,,,,,,,,,,Christopher George,,,,,,,Kick,Good,,,,,KJ Riley,,,,,,,,,,,,,,,,,1,0,6.0,0.0,00:00,08:56,1436
-1,09:11,2,15,BLM,1,10,-35,BLM,Kickoff,,,,,,,,,,,,,,,,Kevin Carrigan,65,WCU,0,Touchback,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,7.0,0.0,00:00,08:56,1436
-1,09:11,3,2,WCU,1,10,-25,WCU,Pass,0.0,,,,,Cooper Jordan,R, short,Seth Degree,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,7.0,0.0,00:15,08:56,1436
-1,09:11,3,3,WCU,2,10,-25,WCU,Run,14.0,39,WCU,Jayden Williams,R,,,,,,,,,,,,,,,,,,,,,,,,Quentin Gaskill,Ryan D'Ambra,,,,,,,,,,,,,,,,0,0,7.0,0.0,00:29,08:42,1422
-1,09:11,3,4,WCU,1,10,-39,WCU,Run,2.0,41,WCU,Cooper Jordan,R,,,,,,,,,,,,,,,,,,,,,,,,Tom Goetz,,,,,,,,,,,,,,,,,0,0,7.0,0.0,00:29,08:12,1392
-1,09:11,3,5,WCU,2,8,-41,WCU,Pass,14.0,45,BLOOM,,,Cooper Jordan,R, short,Daquan Robinson,Complete,,,,,,,,,,,,,,,,,,,Ron Long,,,,,,,,,Illegal Formation,,WCU,5,,1.0,,,0,0,7.0,0.0,00:15,07:43,1363
-1,09:11,3,6,WCU,2,13,-36,WCU,Run,2.0,38,WCU,Cooper Jordan,M,,,,,,,,,,,,,,,,,,,,,,,,Giovanni Cancro,Brady Thompson,,,,,,,,,,,,,,,,0,0,7.0,0.0,00:29,07:28,1348
-1,09:11,3,7,WCU,3,11,-38,WCU,Penalty,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,,Kenny Yurkonis,,,,1.0,,,0,0,7.0,0.0,00:15,06:59,1319
-1,09:11,3,8,WCU,3,6,-43,WCU,Pass,0.0,,,,,Cooper Jordan,L, short,Julian Jordan,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,7.0,0.0,00:15,06:44,1304
-1,09:11,3,9,WCU,4,6,-43,WCU,Punt,,,,,,,,,,,,,,,,Sean Henry,41,BLOOM,16,Fair Catch,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,7.0,0.0,00:15,06:30,1290
-1,06:15,4,2,BLM,1,10,-16,BLM,Run,2.0,18,BLOOM,Kaleb Monaco,M,,,,,,,,,,,,,,,,,,,,,,,,Charley Mininger,Tom Burns,,,,,,,,,,,,,,,,0,0,7.0,0.0,00:44,06:15,1275
-1,06:15,4,3,BLM,2,8,-18,BLM,Run,0.0,18,BLOOM,Kaleb Monaco,M,,,,,,,,,,,,,,,,,,,,,,,,Ayyub Dail,Obi Anyatonwu,,,,,,,,,,,,,,,,0,0,7.0,0.0,00:44,05:31,1231
-1,06:15,4,4,BLM,3,8,-18,BLM,Pass,0.0,,,,,KJ Riley,R, deep,Owen Anderson,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,7.0,0.0,00:22,04:47,1187
-1,04:25,4,5,BLM,4,8,-18,BLM,Punt,,,,,,,,,,,,,,,,Brendan Gregory,42,WCU,40,Return,,,,,D'Shaun Seals,60,BLOOM,0,,,,,,,,,,,,,,1.0,,,,0,6,7.0,0.0,00:04,04:25,1165
-1,04:25,4,6,WCU,1,10,3,BLM,Extra Pt.,,,,,,,,,,,,,,,,Sean Henry,,,,,,,Kick,Good,,,,,Chris Barbera,,,,,,,,,,,,,,,,,0,1,7.0,6.0,00:00,04:21,1161
-1,04:25,4,7,WCU,1,10,-35,WCU,Kickoff,,,,,,,,,,,,,,,,Sean Henry,65,BLOOM,0,Return,,,,,Kaleb Monaco,32,BLOOM,32,Jimmy Wright,,,,,,,,,,,,,,,,,0,0,7.0,7.0,00:04,04:21,1161
-1,04:16,5,2,BLM,1,10,-32,BLM,Run,3.0,35,BLOOM,Ty Pringle,M,,,,,,,,,,,,,,,,,,,,,,,,Ayyub Dail,Nate Desmond,,,,,,,,,,,,,,,,0,0,7.0,7.0,00:36,04:16,1156
-1,04:16,5,3,BLM,2,7,-35,BLM,Pass,7.0,42,BLOOM,,,KJ Riley,M, short,Nas Jones,Complete,,,,,,,,,,,,,,,,,,,DeJuan Dandridge,,,,,,,,,,,,,,,,,0,0,7.0,7.0,00:18,03:40,1120
-1,04:16,5,4,BLM,1,10,-42,BLM,Pass,0.0,,,,,KJ Riley,R, deep,Jerry Griffen-Batchler,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,7.0,7.0,00:18,03:21,1101
-1,04:16,5,5,BLM,2,10,-42,BLM,Run,0.0,42,BLOOM,Ty Pringle,R,,,,,,,,,,,,,,,,,,,,,,,,Khalib Slaughter,,,,,,,,,,,,,,,,,0,0,7.0,7.0,00:36,03:03,1083
-1,04:16,5,6,BLM,3,10,-42,BLM,Pass,0.0,,,,,KJ Riley,M, short,Jaden Helton,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,7.0,7.0,00:18,02:26,1046
-1,04:16,5,7,BLM,4,10,-42,BLM,Punt,,,,,,,,,,,,,,,,Brendan Gregory,35,WCU,23,Fair Catch,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,7.0,7.0,00:18,02:08,1028
-1,01:50,6,2,WCU,1,10,-23,WCU,Pass,0.0,,,,,Cooper Jordan,L, deep,Julian Jordan,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,7.0,7.0,00:18,01:50,1010
-1,01:50,6,3,WCU,2,10,-23,WCU,Run,1.0,24,WCU,Daquan Robinson,M,,,,,,,,,,,,,,,,,,,,,,,,Ky Seesholtz,,,,,,,,,,,,,,,,,0,0,7.0,7.0,00:37,01:32,992
-1,01:50,6,4,WCU,3,9,-24,WCU,Pass,11.0,35,WCU,,,Cooper Jordan,L, short,Rahiem Bowens,Complete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,7.0,7.0,00:18,00:55,955
-1,01:50,6,5,WCU,1,10,-35,WCU,Run,4.0,39,WCU,Daquan Robinson,L,,,,,,,,,,,,,,,,,,,,,,,,Giovanni Cancro,,,,,,,,,,,,,,,,,0,0,7.0,7.0,00:37,00:37,937
-2,15:00,7,2,WCU,2,6,-39,WCU,Pass,11.0,50,WCU,,,Cooper Jordan,L, short,Daquan Robinson,Complete,,,,,,,,,,,,,,,,,,,Ryan D'Ambra,,,,,,,,,,,,,,,,,0,0,7.0,7.0,00:19,15:00,900
-2,15:00,7,3,WCU,1,10,50,WCU,Run,4.0,46,BLOOM,Daquan Robinson,L,,,,,,,,,,,,,,,,,,,,Ervin Mitchell,5,WCU,49,Julian Jordan,,0.0,Daquan Robinson,Ervin Mitchell,BLOOM,BLOOM,48,,,,,,,,,,0,0,7.0,7.0,00:38,14:41,881
-2,14:03,8,2,BLM,1,10,49,WCU,Run,8.0,41,WCU,Kaleb Monaco,L,,,,,,,,,,,,,,,,,,,,,,,,Obi Anyatonwu,,,,,,,,,,,,,,,,,0,0,7.0,7.0,00:52,14:03,843
-2,14:03,8,3,BLM,2,2,41,WCU,Run,4.0,37,WCU,Kaleb Monaco,L,,,,,,,,,,,,,,,,,,,,,,,,DeJuan Dandridge,,,,,,,,,,,,,,,,,0,0,7.0,7.0,00:52,13:11,791
-2,14:03,8,4,BLM,1,10,37,WCU,Run,10.0,27,WCU,KJ Riley,R,,,,,,,,,,,,,,,,,,,,,,,,DeJuan Dandridge,Connor Noble,,,,,,,,,,,,,,1.0,,0,0,7.0,7.0,00:26,12:18,738
-2,11:52,8,5,BLM,1,10,27,WCU,Timeout,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,7.0,7.0,00:22,11:52,712
-2,11:52,8,6,BLM,1,10,27,WCU,Run,-9.0,36,WCU,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,7.0,7.0,00:44,11:30,690
-2,11:52,8,7,BLM,2,19,36,WCU,Run,4.0,32,WCU,Ty Pringle,R,,,,,,,,,,,,,,,,,,,,,,,,Sterlen Barr,,,,,,,,,,,,,,,,,0,0,7.0,7.0,00:44,10:47,647
-2,11:52,8,8,BLM,3,15,32,WCU,Run,2.0,30,WCU,Ty Pringle,R,,,,,,,,,,,,,,,,,,,,,,,,Connor Noble,Khalib Slaughter,,,,,,,,,,,,,,1.0,,0,0,7.0,7.0,00:22,10:03,603
-2,09:41,8,9,BLM,4,13,30,WCU,Timeout,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,7.0,7.0,00:07,09:41,581
-2,09:34,8,10,BLM,4,13,30,WCU,FG,,,,,,,,,,,,,,,,Christopher George,,,,,48,No Good,,,,,,,KJ Riley,,,,,,,,,,,,,,,,,0,0,7.0,7.0,00:22,09:34,574
-2,09:34,9,2,WCU,1,10,-30,WCU,Run,1.0,31,WCU,Jayden Williams,M,,,,,,,,,,,,,,,,,,,,,,,,Brady Thompson,,,,,,,,,,,,,,,,,0,0,7.0,7.0,00:45,09:12,552
-2,09:34,9,3,WCU,2,9,-31,WCU,Pass,13.0,44,WCU,,,Ethan Kohler,R, short,Rahiem Bowens,Complete,,,,,,,,,,,,,,,,,,,Quentin Gaskill,,,,,,,,,,,,,,,,,0,0,7.0,7.0,00:22,08:26,506
-2,09:34,9,4,WCU,1,10,-44,WCU,Run,2.0,46,WCU,Jayden Williams,M,,,,,,,,,,,,,,,,,,,,,,,,Kenny Yurkonis,Giovanni Cancro,,,,,,,,,,,,,,,,0,0,7.0,7.0,00:45,08:04,484
-2,09:34,9,5,WCU,2,8,-46,WCU,Pass,17.0,37,BLOOM,,,Ethan Kohler,L, short,D'Shaun Seals,Complete,,,,,,,,,,,,,,,,,,,Devin Fleming,Nate Capers,,,,,,,,,,,,,,,,0,0,7.0,7.0,00:22,07:19,439
-2,09:34,9,6,BLM,1,10,-37,BLM,Run,6.0,31,BLOOM,Jayden Williams,L,,,,,,,,,,,,,,,,,,,,,,,,Ron Long,,,,,,,,,,,,,,,,,0,0,7.0,7.0,00:45,06:56,416
-2,09:34,9,7,BLM,2,4,-31,BLM,Pass,9.0,22,BLOOM,,,Ethan Kohler,M, short,Rahiem Bowens,Complete,,,,,,,,,,,,,,,,,,,Brady Thompson,,0.0,Rahiem Bowens,,,BLOOM,23,,,,,,,,,,0,0,7.0,7.0,00:22,06:12,372
-2,09:34,9,8,BLM,1,10,-22,BLM,Run,19.0,3,BLOOM,Jayden Williams,L,,,,,,,,,,,,,,,,,,,,,,,,Quentin Gaskill,,,,,,,,,,,,,,,,,0,0,7.0,7.0,00:45,05:49,349
-2,05:04,9,9,BLM,1,3,-3,BLM,Run,3.0,0,BLOOM,Brody McAndrew,M,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,,,,6,0,7.0,7.0,00:03,05:04,304
-2,05:04,9,10,WCU,1,10,3,BLM,Extra Pt.,,,,,,,,,,,,,,,,Sean Henry,,,,,,,Kick,Good,,,,,Chris Barbera,,,,,,,,,,,,,,,,,0,1,13.0,7.0,00:00,05:01,301
-2,05:04,9,11,WCU,1,10,-35,WCU,Penalty,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,,,,,,1.0,,,0,0,13.0,8.0,00:03,05:01,301
-2,05:04,9,12,WCU,1,10,-20,WCU,Kickoff,,,,,,,,,,,,,,,,Sean Henry,63,BLOOM,17,Return,,,,,Kaleb Monaco,19,BLOOM,36,Victor Pena,Alex Sciarrino,,,,,,,,,,,,,,,,0,0,13.0,8.0,00:03,04:59,299
-2,04:56,10,2,BLM,1,10,-36,BLM,Pass,15.0,49,WCU,,,KJ Riley,L, short,Nas Jones,Complete,,,,,,,,,,,,,,,,,,,Kaleb Brown,,,,,,,,,,,,,,,,,0,0,13.0,8.0,00:28,04:56,296
-2,04:56,10,3,BLM,1,10,49,WCU,Pass,39.0,10,WCU,,,KJ Riley,M, deep,Owen Anderson,Complete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,13.0,8.0,00:28,04:28,268
-2,04:56,10,4,BLM,1,10,10,WCU,Run,4.0,6,WCU,Kaleb Monaco,M,,,,,,,,,,,,,,,,,,,,,,,,Connor Noble,,,,,,,,,,,,,,,,,0,0,13.0,8.0,00:57,03:59,239
-2,03:02,10,5,BLM,2,6,6,WCU,Run,6.0,0,WCU,Jerry Griffen-Batchler,L,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,,,,6,0,13.0,8.0,00:06,03:02,182
-2,03:02,10,6,BLM,1,10,3,WCU,Extra Pt.,,,,,,,,,,,,,,,,Christopher George,,,,,,,Kick,Good,,,,,KJ Riley,,,,,,,,,,,,,,,,,1,0,19.0,8.0,00:00,02:56,176
-2,03:02,10,7,BLM,1,10,-35,BLM,Kickoff,,,,,,,,,,,,,,,,Kevin Carrigan,63,WCU,2,Return,,,,,Dayshawn Jacobs,36,WCU,38,Hakeem Bacon,,,,,,,,,,,,,,,,,0,0,20.0,8.0,00:06,02:56,176
-2,02:49,11,2,WCU,1,10,-38,WCU,Run,4.0,42,WCU,Jayden Williams,L,,,,,,,,,,,,,,,,,,,,,,,,Quentin Gaskill,,,,,,,,,,,,,,,,,0,0,20.0,8.0,00:24,02:49,169
-2,02:49,11,3,WCU,2,6,-42,WCU,Run,2.0,44,WCU,Cooper Jordan,M,,,,,,,,,,,,,,,,,,,,,,,,Tom Goetz,,,,,,,,,,,,,,,,,0,0,20.0,8.0,00:24,02:25,145
-2,02:49,11,4,WCU,3,4,-44,WCU,Pass,0.0,,,,,Cooper Jordan,L, short,Rahiem Bowens,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,20.0,8.0,00:12,02:00,120
-2,02:49,11,5,WCU,4,4,-44,WCU,Punt,,,,,,,,,,,,,,,,Sean Henry,34,BLOOM,22,Fair Catch,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,20.0,8.0,00:12,01:48,108
-2,01:36,12,2,BLM,1,10,-11,BLM,Run,11.0,22,BLOOM,Ty Pringle,R,,,,,,,,,,,,,,,,,,,,,,,,Sterlen Barr,,,,,,,,,,,,,,,,,0,0,20.0,8.0,00:20,01:36,96
-2,01:36,12,3,BLM,1,10,-22,BLM,Run,7.0,29,BLOOM,Ty Pringle,R,,,,,,,,,,,,,,,,,,,,,,,,Connor Noble,,,,,,,,,,,,,,,,,0,0,20.0,8.0,00:20,01:16,76
-2,01:36,12,4,BLM,2,3,-29,BLM,Run,6.0,35,BLOOM,Ty Pringle,M,,,,,,,,,,,,,,,,,,,,,,,,Darrell Brown,Maurice Beverly,,,,,,,,,,,,,,,,0,0,20.0,8.0,00:20,00:56,56
-2,01:36,12,5,BLM,1,10,-35,BLM,Pass,12.0,47,BLOOM,,,KJ Riley,R, short,Jerry Griffen-Batchler,Complete,,,,,,,,,,,,,,,,,,,Sterlen Barr,,,,,,,,,,,,,,,,,0,0,20.0,8.0,00:10,00:36,36
-2,01:36,12,6,BLM,1,10,-47,BLM,Pass,5.0,48,WCU,,,KJ Riley,R, short,Owen Anderson,Complete,,,,,,,,,,,,,,,,,,,Khalib Slaughter,Connor Noble,,,,,,,,,,,,,,1.0,,0,0,20.0,8.0,00:10,00:26,26
-2,00:16,12,7,BLM,2,5,48,WCU,Timeout,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,20.0,8.0,00:03,00:16,16
-2,00:16,12,8,BLM,2,5,48,WCU,Pass,0.0,,,,,KJ Riley,M, short,Nas Jones,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,20.0,8.0,00:03,00:13,13
-2,00:16,12,9,BLM,3,5,48,WCU,Pass,11.0,37,WCU,,,KJ Riley,R, short,Nas Jones,Complete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,20.0,8.0,00:03,00:10,10
-2,00:16,12,10,BLM,1,10,37,WCU,Run,1.0,36,WCU,KJ Riley,R,,,,,,,,,,,,,,,,,,,,,,,,Charley Mininger,,,,,,,,,,,,,,,,,0,0,20.0,8.0,00:06,00:06,6
-3,15:00,13,3,BLM,,,,,Kickoff,,,,,,,,,,,,,,,,Kevin Carrigan,63,WCU,7,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,20.0,8.0,,15:00,1800
-3,14:57,14,2,WCU,1,10,-40,WCU,Run,6.0,46,WCU,Jayden Williams,R,,,,,,,,,,,,,,,,,,,,,,,,Tom Goetz,,,,,,,,,,,,,,,,,0,0,20.0,8.0,00:39,14:57,1797
-3,14:57,14,3,WCU,2,4,-46,WCU,Run,9.0,45,BLOOM,Jayden Williams,R,,,,,,,,,,,,,,,,,,,,,,,,Brady Thompson,,,,,,,,,,,,,,,,,0,0,20.0,8.0,00:39,14:18,1758
-3,14:57,14,4,BLM,1,10,-45,BLM,Run,9.0,36,BLOOM,Jayden Williams,R,,,,,,,,,,,,,,,,,,,,,,,,Ron Long,,,,,,,,,,Ron Long,,,,,,,0,0,20.0,8.0,00:39,13:38,1718
-3,14:57,14,5,BLM,1,10,-21,BLM,Run,4.0,17,BLOOM,Brody McAndrew,M,,,,,,,,,,,,,,,,,,,,,,,,Quentin Gaskill,Nate Capers,,,,,,,,,,,,,,,,0,0,20.0,8.0,00:39,12:59,1679
-3,14:57,14,6,BLM,2,6,-17,BLM,Run,-1.0,18,BLOOM,Jayden Williams,R,,,,,,,,,,,,,,,,,,,,,,,,Giovanni Cancro,,,,,,,,,,,,,,,,,0,0,20.0,8.0,00:39,12:19,1639
-3,14:57,14,7,BLM,3,7,-18,BLM,Pass,9.0,9,BLOOM,,,Cooper Jordan,R, short,Dayshawn Jacobs,Complete,,,,,,,,,,,,,,,,,,,Quentin Gaskill,Kenny Yurkonis,,,,,,,,,,,,,,,,0,0,20.0,8.0,00:20,11:40,1600
-3,11:20,14,8,BLM,1,9,-9,BLM,Run,9.0,0,BLOOM,Cooper Jordan,R,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,,,,6,0,20.0,8.0,00:16,11:20,1580
-3,11:20,14,9,WCU,1,10,3,BLM,Extra Pt.,,,,,,,,,,,,,,,,Sean Henry,,,,,,,Kick,Good,,,,,Chris Barbera,,,,,,,,,,,,,,,,,0,1,26.0,8.0,00:00,11:04,1564
-3,11:20,14,10,WCU,1,10,-35,WCU,Kickoff,,,,,,,,,,,,,,,,Sean Henry,65,BLOOM,0,Touchback,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:00,11:04,1564
-3,11:20,15,2,BLM,1,10,-25,BLM,Run,4.0,29,BLOOM,Kaleb Monaco,M,,,,,,,,,,,,,,,,,,,,,,,,Tom Burns,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:33,11:04,1564
-3,11:20,15,3,BLM,2,6,-29,BLM,Run,9.0,38,BLOOM,Kaleb Monaco,R,,,,,,,,,,,,,,,,,,,,,,,,Maurice Beverly,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:33,10:31,1531
-3,11:20,15,4,BLM,1,10,-38,BLM,Run,6.0,44,BLOOM,Kaleb Monaco,R,,,,,,,,,,,,,,,,,,,,,,,,Ayyub Dail,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:33,09:59,1499
-3,11:20,15,5,BLM,2,4,-44,BLM,Run,3.0,47,BLOOM,Kaleb Monaco,R,,,,,,,,,,,,,,,,,,,,,,,,Kaleb Brown,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:33,09:26,1466
-3,11:20,15,6,BLM,3,1,-47,BLM,Run,0.0,47,BLOOM,Ty Pringle,M,,,,,,,,,,,,,,,,,,,,,,,,Connor Noble,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:33,08:53,1433
-3,11:20,15,7,BLM,4,1,-47,BLM,Run,1.0,48,BLOOM,Ty Pringle,M,,,,,,,,,,,,,,,,,,,,,,,,Nate Desmond,Tom Burns,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:33,08:21,1401
-3,11:20,15,8,BLM,1,10,-48,BLM,Pass,25.0,27,WCU,,,KJ Riley,L, short,Jack Ferguson,Complete,,,,,,,,,,,,,,,,,,,,,0.0,Jack Ferguson,Connor Noble,WCU,WCU,27,,,,,,,,,,0,0,26.0,9.0,00:16,07:48,1368
-3,07:32,16,2,WCU,1,10,-27,WCU,Pass,11.0,38,WCU,,,Ethan Kohler,L, short,Daquan Robinson,Complete,,,,,,,,,,,,,,,,,,,Ryan D'Ambra,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:33,07:32,1352
-3,07:32,16,3,WCU,1,10,-38,WCU,Run,-5.0,33,WCU,Daquan Robinson,L,,,,,,,,,,,,,,,,,,,,,,,,Charles Crews III,,,,,,,,,,,,,,,,,0,0,26.0,9.0,01:07,06:59,1319
-3,07:32,16,4,WCU,2,15,-33,WCU,Pass,5.0,38,WCU,,,Ethan Kohler,M, short,D'Shaun Seals,Complete,,,,,,,,,,,,,,,,,,,Ky Seesholtz,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:33,05:52,1252
-3,07:32,16,5,WCU,3,10,-38,WCU,Pass,-2.0,36,WCU,,,Ethan Kohler,,,,Sack,,,,,,,,,,,,,,,,,,,Joseph Kahn,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:33,05:19,1219
-3,07:32,16,6,WCU,4,12,-36,WCU,Punt,,,,,,,,,,,,,,,,Sean Henry,39,BLOOM,25,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:33,04:45,1185
-3,04:12,17,2,BLM,1,10,-25,BLM,Pass,9.0,34,BLOOM,,,KJ Riley,R, short,Owen Anderson,Complete,,,,,,,,,,,,,,,,,,,Khalib Slaughter,Sterlen Barr,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:18,04:12,1152
-3,04:12,17,3,BLM,2,1,-34,BLM,Pass,0.0,,,,,KJ Riley,R, short,Jerry Griffen-Batchler,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:18,03:54,1134
-3,04:12,17,4,BLM,3,1,-34,BLM,Run,7.0,41,BLOOM,Kaleb Monaco,M,,,,,,,,,,,,,,,,,,,,,,,,Khalib Slaughter,Ayyub Dail,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:37,03:35,1115
-3,04:12,17,5,BLM,1,10,-41,BLM,Pass,0.0,,,,,KJ Riley,R, short,Jerry Griffen-Batchler,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:18,02:58,1078
-3,04:12,17,6,BLM,2,10,-41,BLM,Run,4.0,45,BLOOM,Kaleb Monaco,M,,,,,,,,,,,,,,,,,,,,,,,,Darrell Brown,Nate Desmond,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:37,02:40,1060
-3,04:12,17,7,BLM,3,6,-45,BLM,Pass,8.0,47,WCU,,,KJ Riley,L, short,Owen Anderson,Complete,,,,,,,,,,,,,,,,,,,Kaleb Brown,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:18,02:03,1023
-3,04:12,17,8,BLM,1,10,47,WCU,Pass,6.0,41,WCU,,,KJ Riley,L, short,Jerry Griffen-Batchler,Complete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:18,01:44,1004
-3,04:12,17,9,BLM,2,4,41,WCU,Run,0.0,41,WCU,Gabe Brower,L,,,,,,,,,,,,,,,,,,,,,,,,Kaleb Brown,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:37,01:26,986
-3,04:12,17,10,BLM,3,4,41,WCU,Pass,0.0,,,,,KJ Riley,R, short,Jack Ferguson,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:18,00:49,949
-3,04:12,17,11,BLM,4,4,41,WCU,Punt,,,,,,,,,,,,,,,,Brendan Gregory,32,WCU,9,Fair Catch,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:18,00:30,930
-3,00:12,18,2,WCU,1,10,-9,WCU,Run,-2.0,7,WCU,Daquan Robinson,R,,,,,,,,,,,,,,,,,,,,,,,,Brady Thompson,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:12,00:12,912
-4,15:00,19,2,WCU,2,12,-7,WCU,Pass,19.0,26,WCU,,,Cooper Jordan,L, short,Robby Longo,Complete,,,,,,,,,,,,,,,,,,,Quentin Gaskill,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:19,15:00,900
-4,15:00,19,3,WCU,1,10,-26,WCU,Run,6.0,32,WCU,Cooper Jordan,L,,,,,,,,,,,,,,,,,,,,,,,,Brady Thompson,Ryan D'Ambra,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:38,14:41,881
-4,15:00,19,4,WCU,2,4,-32,WCU,Run,1.0,33,WCU,Daquan Robinson,L,,,,,,,,,,,,,,,,,,,,,,,,Giovanni Cancro,Ky Seesholtz,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:38,14:03,843
-4,15:00,19,5,WCU,3,3,-33,WCU,Pass,0.0,,,,,Cooper Jordan,L, short,Rahiem Bowens,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:19,13:25,805
-4,15:00,19,6,WCU,4,3,-33,WCU,Penalty,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,Encroachment,,BLOOM,5,,1.0,,,0,0,26.0,9.0,00:19,13:06,786
-4,15:00,19,7,WCU,1,10,-38,WCU,Run,3.0,41,WCU,Jayden Williams,L,,,,,,,,,,,,,,,,,,,,,,,,Joseph Kahn,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:38,12:47,767
-4,15:00,19,8,WCU,2,7,-41,WCU,Run,3.0,44,WCU,Brody McAndrew,M,,,,,,,,,,,,,,,,,,,,,,,,Ryan D'Ambra,Harry Jennings,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:38,12:09,729
-4,15:00,19,9,WCU,3,4,-44,WCU,Pass,7.0,49,BLOOM,,,Cooper Jordan,L, short,D'Shaun Seals,Complete,,,,,,,,,,,,,,,,,,,Ron Long,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:19,11:31,691
-4,15:00,19,10,BLM,1,10,-49,BLM,Run,5.0,44,BLOOM,Cooper Jordan,L,,,,,,,,,,,,,,,,,,,,,,,,Tom Goetz,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:38,11:12,672
-4,15:00,19,11,BLM,2,5,-44,BLM,Run,2.0,42,BLOOM,Jayden Williams,L,,,,,,,,,,,,,,,,,,,,,,,,Devin Fleming,Ky Seesholtz,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:38,10:35,635
-4,15:00,19,12,BLM,3,3,-42,BLM,Pass,16.0,26,BLOOM,,,Cooper Jordan,L, short,Rahiem Bowens,Complete,,,,,,,,,,,,,,,,,,,Devin Fleming,,,,,,,,,Ineligible Downfield On Pass,,WCU,5,,1.0,,,0,0,26.0,9.0,00:19,09:57,597
-4,15:00,19,13,BLM,3,8,-47,BLM,Pass,15.0,32,BLOOM,,,Cooper Jordan,L, short,D'Shaun Seals,Complete,,,,,,,,,,,,,,,,,,,DJ Greene,Ron Long,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:19,09:38,578
-4,15:00,19,14,BLM,1,10,-32,BLM,Run,2.0,30,BLOOM,D'Shaun Seals,L,,,,,,,,,,,,,,,,,,,,,,,,Ryan Woertz,Ron Long,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:38,09:19,559
-4,15:00,19,15,BLM,2,8,-30,BLM,Run,4.0,26,BLOOM,Brody McAndrew,M,,,,,,,,,,,,,,,,,,,,,,,,Ryan D'Ambra,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:38,08:41,521
-4,15:00,19,16,BLM,3,4,-26,BLM,Run,2.0,24,BLOOM,Jayden Williams,L,,,,,,,,,,,,,,,,,,,,,,,,Quamire Green,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:38,08:03,483
-4,15:00,19,17,BLM,4,2,-24,BLM,Run,2.0,22,BLOOM,Brody McAndrew,M,,,,,,,,,,,,,,,,,,,,,,,,Harry Jennings,Charles Crews III,,,,,,,,Illegal Shift,,WCU,5,,1.0,,,0,0,26.0,9.0,00:38,07:25,445
-4,06:47,19,18,WCU,4,7,29,BLM,FG,,,,,,,,,,,,,,,,Sean Henry,,,,,46,No Good,,,,,,,Chris Barbera,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:20,06:47,407
-4,06:47,20,2,BLM,1,10,-29,BLM,Run,1.0,30,BLOOM,Kaleb Monaco,M,,,,,,,,,,,,,,,,,,,,,,,,Sterlen Barr,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:40,06:27,387
-4,06:47,20,3,BLM,2,9,-30,BLM,Run,10.0,40,BLOOM,Kaleb Monaco,M,,,,,,,,,,,,,,,,,,,,,,,,Darrell Brown,Connor Noble,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:40,05:47,347
-4,06:47,20,4,BLM,1,10,-40,BLM,Pass,23.0,37,WCU,,,KJ Riley,L, short,Jerry Griffen-Batchler,Complete,,,,,,,,,,,,,,,,,,,Obi Anyatonwu,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:20,05:07,307
-4,06:47,20,5,BLM,1,10,37,WCU,Run,10.0,27,WCU,Kaleb Monaco,M,,,,,,,,,,,,,,,,,,,,,,,,Darrell Brown,,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:40,04:48,288
-4,06:47,20,6,BLM,1,10,27,WCU,Run,7.0,20,WCU,Kaleb Monaco,L,,,,,,,,,,,,,,,,,,,,,,,,Connor Noble,Kaleb Brown,,,,,,,,,,,,,,,,0,0,26.0,9.0,00:40,04:08,248
-4,03:28,20,7,BLM,2,3,20,WCU,Pass,20.0,0,WCU,,,KJ Riley,M, deep,Nas Jones,Complete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,,,,6,0,26.0,9.0,00:03,03:28,208
-4,03:28,20,8,BLM,1,10,3,WCU,Extra Pt.,,,,,,,,,,,,,,,,Christopher George,,,,,,,Kick,Good,,,,,KJ Riley,,,,,,,,,,,,,,,,,1,0,32.0,9.0,00:00,03:25,205
-4,03:28,20,9,BLM,1,10,-35,BLM,Kickoff,,,,,,,,,,,,,,,,Kevin Carrigan,65,WCU,0,Return,,,,,Dayshawn Jacobs,29,WCU,29,Hakeem Bacon,,,,,,,,,,,,,,,,,0,0,33.0,9.0,00:03,03:25,205
-4,03:22,21,2,WCU,1,10,-29,WCU,Run,3.0,32,WCU,Daquan Robinson,L,,,,,,,,,,,,,,,,,,,,,,,,Quentin Gaskill,Tom Goetz,,,,,,,,,,,,,,,,0,0,33.0,9.0,00:35,03:22,202
-4,03:22,21,3,WCU,2,7,-32,WCU,Pass,9.0,41,WCU,,,Cooper Jordan,L, short,D'Shaun Seals,Complete,,,,,,,,,,,,,,,,,,,Ron Long,,,,,,,,,,,,,,,,,0,0,33.0,9.0,00:18,02:47,167
-4,03:22,21,4,WCU,1,10,-41,WCU,Pass,-7.0,34,WCU,,,Cooper Jordan,,,,Sack,,,,,,,,,,,,,,,,,,,Ryan D'Ambra,,,,,,,,,,,,,,,,,0,0,33.0,9.0,00:18,02:29,149
-4,03:22,21,5,WCU,2,17,-34,WCU,Pass,11.0,45,WCU,,,Cooper Jordan,L, short,Daquan Robinson,Complete,,,,,,,,,,,,,,,,,,,Devin Fleming,,,,,,,,,,,,,,,,,0,0,33.0,9.0,00:18,02:11,131
-4,03:22,21,6,WCU,3,6,-45,WCU,Run,8.0,47,BLOOM,Cooper Jordan,M,,,,,,,,,,,,,,,,,,,,,,,,,,0.0,Cooper Jordan,D'Shaun Seals,WCU,WCU,49,,,,,,,,1.0,,0,0,33.0,9.0,00:18,01:54,114
-4,01:36,21,7,WCU,1,10,47,BLM,Timeout,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,33.0,9.0,00:11,01:36,96
-4,01:36,21,8,BLM,1,10,-47,BLM,Run,8.0,39,BLOOM,Cooper Jordan,M,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,33.0,9.0,00:22,01:25,85
-4,01:36,21,9,BLM,2,2,-39,BLM,Pass,0.0,,,,,Cooper Jordan,R, deep,Rahiem Bowens,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,33.0,9.0,00:11,01:03,63
-4,01:36,21,10,BLM,3,2,-39,BLM,Run,0.0,39,BLOOM,Cooper Jordan,M,,,,,,,,,,,,,,,,,,,,,,,,Brady Thompson,,,,,,,,,,,,,,,1.0,,0,0,33.0,9.0,00:11,00:52,52
-4,00:41,21,11,BLM,4,2,-39,BLM,Timeout,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,33.0,9.0,00:04,00:41,41
-4,00:41,21,12,BLM,4,2,-39,BLM,Run,16.0,23,BLOOM,Cooper Jordan,L,,,,,,,,,,,,,,,,,,,,,,,,Quentin Gaskill,,,,,,,,,,,,,,,,,0,0,33.0,9.0,00:07,00:37,37
-4,00:41,21,13,BLM,1,10,-23,BLM,Run,20.0,3,BLOOM,Cooper Jordan,L,,,,,,,,,,,,,,,,,,,,,,,,Ron Long,,,,,,,,,,,,,,,,,0,0,33.0,9.0,00:07,00:30,30
-4,00:41,21,14,BLM,1,3,-3,BLM,Penalty,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,False Start,,WCU,5,,1.0,,,0,0,33.0,9.0,00:04,00:22,22
-4,00:41,21,15,BLM,1,8,-8,BLM,Run,0.0,8,BLOOM,Daquan Robinson,M,,,,,,,,,,,,,,,,,,,,,,,,Ky Seesholtz,Brady Thompson,,,,,,,,,,,,,,1.0,,0,0,33.0,9.0,00:04,00:19,19
-4,00:15,21,16,BLM,2,8,-8,BLM,Timeout,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,33.0,9.0,00:06,00:15,15
-4,00:15,21,17,BLM,2,8,-8,BLM,Pass,-5.0,13,BLOOM,,,Cooper Jordan,,,,Sack,,,,,,,,,,,,,,,,,,,Tom Goetz,,,,,,,,,,,,,,,1.0,,0,0,33.0,9.0,00:06,00:09,9
-4,00:03,21,18,BLM,3,13,-13,BLM,Timeout,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,33.0,9.0,00:03,00:03,3
-4,00:00,21,19,WCU,3,13,13,BLM,FG,,,,,,,,,,,,,,,,Sean Henry,,,,,30,No Good,,,,,,,Chris Barbera,,,,,,,,,,,,,,,,,0,0,33.0,9.0,00:00,00:00,0
-5,15:00,23,2,BLM,1,10,-25,BLM,Run,2.0,23,BLOOM,Jayden Williams,M,,,,,,,,,,,,,,,,,,,,,,,,Tom Goetz,,,,,,,,,,,,,,,,,0,0,33.0,9.0,02:00,15:00,1800
-5,15:00,23,3,BLM,2,8,-23,BLM,Pass,8.0,15,BLOOM,,,Cooper Jordan,R, short,D'Shaun Seals,Complete,,,,,,,,,,,,,,,,,,,Ron Long,Ryan D'Ambra,,,,,,,,,,,,,,,,0,0,33.0,9.0,01:00,13:00,1680
-5,15:00,23,4,BLM,1,10,-15,BLM,Penalty,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,,Julian Jordan,,,,1.0,,,0,0,33.0,9.0,01:00,12:00,1620
-5,15:00,23,5,BLM,1,15,-20,BLM,Run,3.0,17,BLOOM,Jayden Williams,M,,,,,,,,,,,,,,,,,,,,,,,,Ryan D'Ambra,Kenny Yurkonis,,,,,,,,,,,,,,,,0,0,33.0,9.0,02:00,11:00,1560
-5,15:00,23,6,BLM,2,12,-17,BLM,Pass,0.0,,,,,Cooper Jordan,L, short,D'Shaun Seals,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,33.0,9.0,01:00,09:00,1440
-5,15:00,23,7,BLM,3,12,-17,BLM,Pass,0.0,,,,,Cooper Jordan,R, short,Seth Degree,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,33.0,9.0,01:00,08:00,1380
-5,00:00,23,8,WCU,4,12,17,BLM,FG,,,,,,,,,,,,,,,,Sean Henry,,,,,34,Good,,,,,,,Chris Barbera,,,,,,,,,,,,,,,,,0,3,33.0,9.0,45:00,00:00,900
-5,15:00,24,2,BLM,1,10,25,WCU,Run,-3.0,28,WCU,Kaleb Monaco,R,,,,,,,,,,,,,,,,,,,,,,,,Khalib Slaughter,,,,,,,,,,,,,,,,,0,0,33.0,12.0,02:00,07:00,1320
-5,15:00,24,3,BLM,2,13,28,WCU,Pass,3.0,25,WCU,,,KJ Riley,L, short,Jaden Helton,Complete,,,,,,,,,,,,,,,,,,,,,0.0,Jaden Helton,,,WCU,22,,,,,,,,,,0,0,33.0,12.0,01:00,05:00,1200
-5,15:00,24,4,BLM,3,10,25,WCU,Penalty,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,,John Shallo,,,,1.0,,,0,0,33.0,12.0,01:00,04:00,1140
-5,15:00,24,5,BLM,3,15,30,WCU,Pass,0.0,,,,,KJ Riley,L, deep,Nas Jones,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,,0,0,33.0,12.0,01:00,03:00,1080
-5,15:00,24,6,BLM,4,15,30,WCU,Timeout,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,33.0,12.0,01:00,02:00,1020
-5,15:00,24,7,BLM,4,15,30,WCU,Pass,-3.0,33,WCU,,,KJ Riley,,,,Sack,,,,,,,,,,,,,,,,,,,Connor Noble,,0.0,KJ Riley,Marlon Westcott,BLOOM,WCU,33,,,,,,,,,,0,0,33.0,12.0,01:00,01:00,960
+1,15:00,1,1,MUHL,,,,,Kickoff,,,,,,,,,,,,,,,,C Fenstermaker,59,MOR,6,Fair Catch,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:00,15:00,1800
+1,15:00,2,4,MOR,1,10,-25,MOR,Run,2.0,27,MOR,Nate Boyle,,,,,,,,,,,,,,,,,,,,,,,,,Derek Rosenow,,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:33,15:00,1800
+1,15:00,2,5,MOR,2,8,-27,MOR,Run,3.0,30,MOR,Nate Boyle,,,,,,,,,,,,,,,,,,,,,,,,,Tyler Ekstrom,Peyton Elliott,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:33,14:27,1767
+1,15:00,2,6,MOR,3,5,-30,MOR,Run,12.0,42,MOR,Nate Boyle,,,,,,,,,,,,,,,,,,,,,,,,,Griffin Zobel,,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:33,13:54,1734
+1,15:00,2,7,MOR,1,10,-42,MOR,Pass,0.0,,,,,Jared Jenkins,,,Brad Bryan,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:16,13:21,1701
+1,15:00,2,8,MOR,2,10,-42,MOR,Pass,27.0,31,MUHL,,,Jared Jenkins,,,Nate Boyle,Complete,,,,,,,,,,,,,,,,,,,Peyton Elliott,Owen Kovacs,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:16,13:05,1685
+1,15:00,2,9,MOR,1,10,31,MUHL,Run,2.0,29,MUHL,Nate Boyle,,,,,,,,,,,,,,,,,,,,,,,,,Peyton Elliott,J Armstrong,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:33,12:49,1669
+1,15:00,2,10,MOR,2,8,29,MUHL,Pass,3.0,26,MUHL,,,Jared Jenkins,,,Camron Tinajero,Complete,,,,,,,,,,,,,,,,,,,Griffin Zobel,,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:16,12:16,1636
+1,15:00,2,11,MOR,3,5,26,MUHL,Run,7.0,19,MUHL,Nate Boyle,,,,,,,,,,,,,,,,,,,,,,,,,Owen Kovacs,,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:33,11:59,1619
+1,15:00,2,12,MOR,1,10,19,MUHL,Run,1.0,18,MUHL,Nate Boyle,,,,,,,,,,,,,,,,,,,,,,,,,K McDowdell,,,,,,,,,Holding,,MOR,10,,1.0,,,0,0,0.0,0.0,00:33,11:27,1587
+1,15:00,2,13,MOR,1,20,29,MUHL,Pass,0.0,,,,,Jared Jenkins,,,Jordan Lewis,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:16,10:54,1554
+1,15:00,2,14,MOR,2,20,29,MUHL,Pass,0.0,,,,,Jared Jenkins,,,Jordan Bingham,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:16,10:37,1537
+1,15:00,2,15,MOR,3,20,29,MUHL,Penalty,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,False Start,,MOR,5,,,,,0,0,0.0,0.0,00:16,10:21,1521
+1,15:00,2,16,MOR,3,25,34,MUHL,Pass,10.0,24,MUHL,,,Jared Jenkins,,,Jordan Bingham,Complete,,,,,,,,,,,,,,,,,,,Matt Giuliano,,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:16,10:04,1504
+1,15:00,2,17,MOR,4,15,24,MUHL,Pass,18.0,6,MUHL,,,Jared Jenkins,,,Jordan Bingham,Complete,,,,,,,,,,,,,,,,,,,Matt Giuliano,,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:16,09:48,1488
+1,15:00,2,18,MOR,1,6,6,MUHL,Run,-1.0,7,MUHL,Nate Boyle,,,,,,,,,,,,,,,,,,,,,,,,,Derek Rosenow,,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:33,09:32,1472
+1,15:00,2,19,MOR,2,7,7,MUHL,Run,2.0,5,MUHL,Nate Boyle,,,,,,,,,,,,,,,,,,,,,,,,,Dom Visintin,,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:33,08:59,1439
+1,15:00,2,20,MOR,3,5,5,MUHL,Pass,0.0,,,,,Jared Jenkins,,,Tim Garlick,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:16,08:26,1406
+1,15:00,2,21,MOR,4,5,5,MUHL,Pass,0.0,,,,,Jared Jenkins,,,Jordan Bingham,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:16,08:09,1389
+1,07:53,3,2,MUHL,1,10,-5,MUHL,Pass,0.0,,,,,Joe Repetti,,,James Nye,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:14,07:53,1373
+1,07:53,3,3,MUHL,2,10,-5,MUHL,Pass,10.0,15,MUHL,,,Joe Repetti,,,Timothy Buda,Complete,,,,,,,,,,,,,,,,,,,Shea Endean,,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:14,07:39,1359
+1,07:53,3,4,MUHL,1,10,-15,MUHL,Run,4.0,19,MUHL,Matthew Manning,,,,,,,,,,,,,,,,,,,,,,,,,Drew Bailey,,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:28,07:25,1345
+1,07:53,3,5,MUHL,2,6,-19,MUHL,Run,8.0,27,MUHL,Joe Repetti,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0.0,0.0,00:28,06:57,1317
+1,07:53,3,6,MUHL,1,10,-27,MUHL,Penalty,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,Personal Foul,,MOR,15,,,,,0,0,0.0,0.0,00:14,06:29,1289
+1,06:15,3,7,MUHL,1,10,-42,MUHL,Pass,58.0,0,MOR,,,Joe Repetti,,,James Nye,Complete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,,,,0,6,0.0,0.0,00:03,06:15,1275
+1,06:15,3,8,MUHL,1,3,3,MOR,Extra Pt.,,,,,,,,,,,,,,,,Alex Garrido,,,,,,,Kick,Good,,,,,,,,,,,,,,,,,,,,,,0,1,0.0,6.0,00:00,06:12,1272
+1,06:15,3,9,MUHL,1,35,-35,MUHL,Kickoff,,,,,,,,,,,,,,,,C Fenstermaker,52,MOR,13,Return,,,,,Nick Coffaro,13,MOR,26,Owen Kovacs,,,,,,,,,,,,,,,,,0,0,0.0,7.0,00:03,06:12,1272
+1,06:09,4,2,MOR,1,10,-26,MOR,Run,-5.0,21,MOR,Nate Boyle,,,,,,,,,,,,,,,,,,,,,,,,,Alex Batista,,,,,,,,,,,,,,,,,0,0,0.0,7.0,00:32,06:09,1269
+1,06:09,4,3,MOR,2,15,-21,MOR,Pass,10.0,31,MOR,,,Jared Jenkins,,,Brad Bryan,Complete,,,,,,,,,,,,,,,,,,,Alex Schafer,,,,,,,,,,,,,,,,,0,0,0.0,7.0,00:16,05:37,1237
+1,06:09,4,4,MOR,3,5,-31,MOR,Run,3.0,34,MOR,Nate Boyle,,,,,,,,,,,,,,,,,,,,,,,,,Tyler Ekstrom,Peyton Elliott,,,,,,,,,,,,,,,,0,0,0.0,7.0,00:32,05:21,1221
+1,06:09,4,5,MOR,4,2,-34,MOR,Penalty,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,Delay Of Game,,MOR,5,,,,,0,0,0.0,7.0,00:16,04:48,1188
+1,06:09,4,6,MOR,4,7,-29,MOR,Punt,,,,,,,,,,,,,,,,Colin Conway,38,MUHL,33,Fair Catch,,,,,,,,,,,,,,,,,,Personal Foul,,MUHL,15,,,,,0,0,0.0,7.0,00:16,04:32,1172
+1,04:16,5,2,MUHL,1,10,-18,MUHL,Run,2.0,20,MUHL,Joe Repetti,,,,,,,,,,,,,,,,,,,,,,,,,Nathan Carr,Jashon Teller,,,,,,,,,,,,,,,,0,0,0.0,7.0,00:26,04:16,1156
+1,04:16,5,3,MUHL,2,8,-20,MUHL,Pass,0.0,,,,,Joe Repetti,,,Aaron Daniels,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0.0,7.0,00:13,03:50,1130
+1,04:16,5,4,MUHL,3,8,-20,MUHL,Pass,27.0,47,MUHL,,,Joe Repetti,,,James Nye,Complete,,,,,,,,,,,,,,,,,,,Matt Capobianco,,,,,,,,,,,,,,,,,0,0,0.0,7.0,00:13,03:37,1117
+1,04:16,5,5,MUHL,1,10,-47,MUHL,Run,5.0,48,MOR,Aaron Daniels,,,,,,,,,,,,,,,,,,,,,,,,,Chris Ortalano,,,,,,,,,,,,,,,,,0,0,0.0,7.0,00:26,03:24,1104
+1,04:16,5,6,MUHL,2,5,48,MOR,Run,0.0,48,MOR,Aaron Daniels,,,,,,,,,,,,,,,,,,,,,,,,,Clay Basile,,,,,,,,,,,,,,,,,0,0,0.0,7.0,00:26,02:57,1077
+1,04:16,5,7,MUHL,3,5,48,MOR,Pass,13.0,35,MOR,,,Joe Repetti,,,P Esannason,Complete,,,,,,,,,,,,,,,,,,,Chris Ortalano,,,,,,,,,,,,,,,,,0,0,0.0,7.0,00:13,02:31,1051
+1,04:16,5,8,MUHL,1,10,35,MOR,Penalty,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,False Start,,MUHL,5,,,,,0,0,0.0,7.0,00:13,02:18,1038
+1,04:16,5,9,MUHL,1,15,40,MOR,Run,0.0,40,MOR,Amari Dunn,,,,,,,,,,,,,,,,,,,,,,,,,EJ Harvey,,,,,,,,,,,,,,,,,0,0,0.0,7.0,00:26,02:05,1025
+1,04:16,5,10,MUHL,2,15,40,MOR,Run,6.0,34,MOR,Amari Dunn,,,,,,,,,,,,,,,,,,,,,,,,,Colin Conway,,,,,,,,,,,,,,,,,0,0,0.0,7.0,00:26,01:39,999
+1,04:16,5,11,MUHL,3,9,34,MOR,Pass,9.0,25,MOR,,,Joe Repetti,,,Amari Dunn,Complete,,,,,,,,,,,,,,,,,,,,,,,,,,,,Personal Foul,,MUHL,15,,,,,0,0,0.0,7.0,00:13,01:12,972
+1,04:16,5,12,MUHL,3,15,40,MOR,Pass,0.0,,,,,Joe Repetti,,,John Sauchelli,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0.0,7.0,00:13,00:59,959
+1,04:16,5,13,MUHL,4,15,40,MOR,Punt,,,,,,,,,,,,,,,,Joe Repetti,25,MOR,15,Downed,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0.0,7.0,00:13,00:46,946
+1,00:33,6,2,MOR,1,10,-15,MOR,Penalty,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,False Start,,MOR,5,,,,,0,0,0.0,7.0,00:11,00:33,933
+1,00:33,6,3,MOR,1,15,-10,MOR,Run,2.0,12,MOR,Nate Boyle,,,,,,,,,,,,,,,,,,,,,,,,,J Armstrong,,,,,,,,,,,,,,,,,0,0,0.0,7.0,00:22,00:22,922
+2,15:00,7,2,MOR,2,13,-12,MOR,Run,0.0,12,MOR,Jared Jenkins,,,,,,,,,,,,,,,,,,,,,,,,,Tyler Ekstrom,,,,,,,,,,,,,,,,,0,0,0.0,7.0,00:29,15:00,900
+2,15:00,7,3,MOR,3,13,-12,MOR,Pass,,,,,,Jared Jenkins,,,,Intercepted,Matt Giuliano,MOR,22,,,,,,,,,,,,Matt Giuliano,0,MOR,22,,,,,,,,,,,,,,,,,,0,0,0.0,7.0,00:15,14:31,871
+2,14:16,8,2,MUHL,1,10,22,MOR,Run,3.0,19,MOR,Matthew Manning,,,,,,,,,,,,,,,,,,,,,,,,,EJ Harvey,,,,,,,,,,,,,,,,,0,0,0.0,7.0,00:35,14:16,856
+2,13:41,8,3,MUHL,2,7,19,MOR,Pass,19.0,0,MOR,,,Joe Repetti,,,James Nye,Complete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,,,,0,6,0.0,7.0,00:02,13:41,821
+2,13:41,8,4,MUHL,1,3,3,MOR,Extra Pt.,,,,,,,,,,,,,,,,Alex Garrido,,,,,,,Kick,Good,,,,,,,,,,,,,,,,,,,,,,0,1,0.0,13.0,00:00,13:39,819
+2,13:41,8,5,MUHL,1,35,-35,MUHL,Kickoff,,,,,,,,,,,,,,,,C Fenstermaker,53,MOR,12,Return,,,,,Anderson Louis,8,MOR,20,Isaiah Williams,,,,,,,,,,,,,,,,,0,0,0.0,14.0,00:02,13:39,819
+2,13:37,9,2,MOR,1,10,-20,MOR,Run,-1.0,19,MOR,Camron Tinajero,,,,,,,,,,,,,,,,,,,,,,,,,Tyler Ekstrom,,,,,,,,,,,,,,,,,0,0,0.0,14.0,00:21,13:37,817
+2,13:37,9,3,MOR,2,11,-19,MOR,Pass,0.0,,,,,Jared Jenkins,,,Brad Bryan,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0.0,14.0,00:11,13:16,796
+2,13:37,9,4,MOR,3,11,-19,MOR,Pass,0.0,,,,,Jared Jenkins,,,,Incomplete,,,,Derek Rosenow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0.0,14.0,00:11,13:05,785
+2,13:37,9,5,MOR,4,11,-19,MOR,Punt,,,,,,,,,,,,,,,,Colin Conway,36,MUHL,45,Fair Catch,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0.0,14.0,00:11,12:55,775
+2,12:44,10,2,MUHL,1,10,-45,MUHL,Run,0.0,45,MUHL,Matthew Manning,,,,,,,,,,,,,,,,,,,,,,,,,Drew Bailey,,,,,,,,,,,,,,,,,0,0,0.0,14.0,00:24,12:44,764
+2,12:44,10,3,MUHL,2,10,-45,MUHL,Pass,0.0,,,,,Joe Repetti,,,Timothy Buda,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0.0,14.0,00:12,12:20,740
+2,12:44,10,4,MUHL,3,10,-45,MUHL,Run,4.0,49,MUHL,Joe Repetti,,,,,,,,,,,,,,,,,,,,,,,,,Jeremy McGuigan,,,,,,,,,,,,,,,,,0,0,0.0,14.0,00:24,12:09,729
+2,12:44,10,5,MUHL,4,6,-49,MUHL,Punt,,,,,,,,,,,,,,,,Joshua Castro,49,MOR,2,Fair Catch,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0.0,14.0,00:12,11:45,705
+2,11:33,11,2,MOR,1,10,-2,MOR,Run,2.0,4,MOR,Nate Boyle,,,,,,,,,,,,,,,,,,,,,,,,,K McDowdell,,,,,,,,,,,,,,,,,0,0,0.0,14.0,00:41,11:33,693
+2,11:33,11,3,MOR,2,8,-4,MOR,Pass,4.0,8,MOR,,,Jared Jenkins,,,Jordan Lewis,Complete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0.0,14.0,00:20,10:52,652
+2,11:33,11,4,MOR,3,4,-8,MOR,Pass,18.0,26,MOR,,,Jared Jenkins,,,Jordan Lewis,Complete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0.0,14.0,00:20,10:32,632
+2,11:33,11,5,MOR,1,10,-26,MOR,Run,7.0,33,MOR,Nate Boyle,,,,,,,,,,,,,,,,,,,,,,,,,Matt Giuliano,,,,,,,,,,,,,,,,,0,0,0.0,14.0,00:41,10:12,612
+2,11:33,11,6,MOR,2,3,-33,MOR,Run,-1.0,32,MOR,Nate Boyle,,,,,,,,,,,,,,,,,,,,,,,,,John Lohrer,,,,,,,,,,,,,,,,,0,0,0.0,14.0,00:41,09:31,571
+2,11:33,11,7,MOR,3,4,-32,MOR,Pass,23.0,45,MUHL,,,Jared Jenkins,,,Jordan Lewis,Complete,,,,,,,,,,,,,,,,,,,Jack Machita,,,,,,,,,,,,,,,,,0,0,0.0,14.0,00:20,08:50,530
+2,11:33,11,8,MOR,1,10,45,MUHL,Pass,0.0,,,,,Jared Jenkins,,,Jordan Bingham,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0.0,14.0,00:20,08:30,510
+2,11:33,11,9,MOR,2,10,45,MUHL,Pass,10.0,35,MUHL,,,Jared Jenkins,,,Tim Garlick,Complete,,,,,,,,,,,,,,,,,,,John Lohrer,Owen Kovacs,,,,,,,,,,,,,,,,0,0,0.0,14.0,00:20,08:09,489
+2,11:33,11,10,MOR,1,10,35,MUHL,Run,5.0,30,MUHL,Nate Boyle,,,,,,,,,,,,,,,,,,,,,,,,,Matt Giuliano,,,,,,,,,,,,,,,,,0,0,0.0,14.0,00:41,07:49,469
+2,11:33,11,11,MOR,2,5,30,MUHL,Run,1.0,29,MUHL,Nate Boyle,,,,,,,,,,,,,,,,,,,,,,,,,K McDowdell,,,,,,,,,,,,,,,,,0,0,0.0,14.0,00:41,07:08,428
+2,11:33,11,12,MOR,3,4,29,MUHL,Pass,0.0,,,,,Jared Jenkins,,,Tim Garlick,Incomplete,,,,Owen Kovacs,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0.0,14.0,00:20,06:27,387
+2,11:33,11,13,MOR,4,4,29,MUHL,Penalty,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,False Start,,MOR,5,,,,,0,0,0.0,14.0,00:20,06:07,367
+2,11:33,11,14,MOR,4,9,34,MUHL,Pass,11.0,23,MUHL,,,Jared Jenkins,,,Nate Boyle,Complete,,,,,,,,,,,,,,,,,,,Griffin Zobel,,,,,,,,,,,,,,,,,0,0,0.0,14.0,00:20,05:47,347
+2,11:33,11,15,MOR,1,10,23,MUHL,Run,2.0,21,MUHL,Nate Boyle,,,,,,,,,,,,,,,,,,,,,,,,,Tyler Ekstrom,,,,,,,,,,,,,,,1.0,,0,0,0.0,14.0,00:20,05:26,326
+2,05:06,11,16,MOR,2,8,21,MUHL,Timeout,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0.0,14.0,00:06,05:06,306
+2,05:00,11,17,MOR,2,8,21,MUHL,Pass,21.0,0,MUHL,,,Jared Jenkins,,,Brad Bryan,Complete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,,,,6,0,0.0,14.0,00:04,05:00,300
+2,05:00,11,18,MOR,1,3,3,MUHL,Extra Pt.,,,,,,,,,,,,,,,,Sean Murphy,,,,,,,Kick,No Good,,,,,Griffin Zobel,,,,,,,,,,,,,,,,,0,0,6.0,14.0,00:00,04:56,296
+2,05:00,11,19,MOR,1,35,-35,MOR,Kickoff,,,,,,,,,,,,,,,,Jackson Lake,39,MUHL,26,Return,,,,,Matt Giuliano,21,MUHL,47,Cael Markle,,,,,,,,,,,,,,,,,0,0,6.0,14.0,00:04,04:56,296
+2,04:53,12,2,MUHL,1,10,-47,MUHL,Run,7.0,46,MOR,Ian Csicsek,,,,,,,,,,,,,,,,,,,,,,,,,Jackson Lake,,,,,,,,,,,,,,,,,0,0,6.0,14.0,00:42,04:53,293
+2,04:53,12,3,MUHL,2,3,46,MOR,Pass,10.0,36,MOR,,,Joe Repetti,,,P Esannason,Complete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,6.0,14.0,00:21,04:11,251
+2,04:53,12,4,MUHL,1,10,36,MOR,Pass,0.0,,,,,Joe Repetti,,,,Incomplete,,,,Jashon Teller,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,6.0,14.0,00:21,03:51,231
+2,04:53,12,5,MUHL,2,10,36,MOR,Pass,16.0,20,MOR,,,Joe Repetti,,,Joshua Castro,Complete,,,,,,,,,,,,,,,,,,,Isaiah Johnson,,,,,,,,,,,,,,,,,0,0,6.0,14.0,00:21,03:30,210
+2,03:09,12,6,MUHL,1,10,20,MOR,Pass,20.0,0,MOR,,,Joe Repetti,,,Matt McKenna,Complete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,,,,0,6,6.0,14.0,00:01,03:09,189
+2,03:09,12,7,MUHL,1,3,3,MOR,Extra Pt.,,,,,,,,,,,,,,,,Alex Garrido,,,,,,,Kick,Good,,,,,,,,,,,,,,,,,,,,,,0,1,6.0,20.0,00:00,03:08,188
+2,03:09,12,8,MUHL,1,35,-35,MUHL,Kickoff,,,,,,,,,,,,,,,,C Fenstermaker,41,MOR,24,Return,,,,,Anderson Louis,1,MOR,25,,,,,,,,,,,,,,,,,,0,0,6.0,21.0,00:01,03:08,188
+2,03:07,13,2,MOR,1,10,-25,MOR,Run,2.0,27,MOR,Camron Tinajero,,,,,,,,,,,,,,,,,,,,,,,,,J Armstrong,,,,,,,,,,,,,,,,,0,0,6.0,21.0,00:32,03:07,187
+2,03:07,13,3,MOR,2,8,-27,MOR,Pass,12.0,39,MOR,,,Jared Jenkins,,,Jordan Bingham,Complete,,,,,,,,,,,,,,,,,,,Owen Kovacs,,,,,,,,,,,,,,,,,0,0,6.0,21.0,00:16,02:35,155
+2,03:07,13,4,MOR,1,10,-39,MOR,Pass,0.0,,,,,Jared Jenkins,,,Jordan Bingham,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,6.0,21.0,00:16,02:18,138
+2,03:07,13,5,MOR,2,10,-39,MOR,Run,4.0,43,MOR,Camron Tinajero,,,,,,,,,,,,,,,,,,,,,,,,,Derek Rosenow,Owen Kovacs,,,,,,,,,,,,,,,,0,0,6.0,21.0,00:32,02:02,122
+2,03:07,13,6,MOR,3,6,-43,MOR,Pass,0.0,,,,,Jared Jenkins,,,Brad Bryan,Incomplete,,,,Tim Higgins,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,6.0,21.0,00:16,01:29,89
+2,03:07,13,7,MOR,4,6,-43,MOR,Punt,,,,,,,,,,,,,,,,Colin Conway,24,MUHL,33,Downed,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,6.0,21.0,00:16,01:13,73
+2,00:57,14,2,MUHL,1,10,-33,MUHL,Pass,29.0,38,MOR,,,Joe Repetti,,,Chris Ardito,Complete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,6.0,21.0,00:08,00:57,57
+2,00:57,14,3,MUHL,1,10,38,MOR,Pass,5.0,33,MOR,,,Joe Repetti,,,Chris Ardito,Complete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,6.0,21.0,00:08,00:49,49
+2,00:57,14,4,MUHL,2,5,33,MOR,Pass,0.0,,,,,Joe Repetti,,,James Nye,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,6.0,21.0,00:08,00:42,42
+2,00:57,14,5,MUHL,3,5,33,MOR,Pass,0.0,,,,,Joe Repetti,,,Timothy Buda,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,,0,0,6.0,21.0,00:08,00:35,35
+2,00:27,14,6,MUHL,4,5,33,MOR,Timeout,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,6.0,21.0,00:03,00:27,27
+2,00:27,14,7,MUHL,4,5,33,MOR,Pass,0.0,,,,,Joe Repetti,,,Joshua Castro,Incomplete,,,,Isaiah Johnson,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,6.0,21.0,00:03,00:24,24
+2,00:21,15,2,MOR,1,10,-33,MOR,Run,-1.0,32,MOR,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,6.0,21.0,00:21,00:21,21
+3,15:00,16,2,MOR,,,,,Kickoff,,,,,,,,,,,,,,,,Jackson Lake,52,MUHL,13,Out Of Bounds,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,6.0,21.0,00:00,15:00,1800
+3,15:00,17,2,MUHL,1,10,-35,MUHL,Run,3.0,38,MUHL,Ian Csicsek,,,,,,,,,,,,,,,,,,,,,,,,,Colin Conway,Matt Capobianco,,,,,,,,,,,,,,,,0,0,6.0,21.0,00:32,15:00,1800
+3,15:00,17,3,MUHL,2,7,-38,MUHL,Penalty,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,False Start,,MUHL,5,,,,,0,0,6.0,21.0,00:16,14:28,1768
+3,15:00,17,4,MUHL,2,12,-33,MUHL,Pass,10.0,43,MUHL,,,Joe Repetti,,,Chris Ardito,Complete,,,,,,,,,,,,,,,,,,,Colin Conway,,,,,,,,,,,,,,,,,0,0,6.0,21.0,00:16,14:11,1751
+3,15:00,17,5,MUHL,3,2,-43,MUHL,Pass,13.0,44,MOR,,,Joe Repetti,,,James Nye,Complete,,,,,,,,,,,,,,,,,,,Colin Conway,Clay Basile,,,,,,,,,,,,,,,,0,0,6.0,21.0,00:16,13:55,1735
+3,15:00,17,6,MUHL,1,10,44,MOR,Run,14.0,30,MOR,Ian Csicsek,,,,,,,,,,,,,,,,,,,,,,,,,Matt Capobianco,Colin Conway,,,,,,,,,,,,,,,,0,0,6.0,21.0,00:32,13:39,1719
+3,15:00,17,7,MUHL,1,10,30,MOR,Run,18.0,12,MOR,Ian Csicsek,,,,,,,,,,,,,,,,,,,,,,,,,Zach Scillia,,,,,,,,,,,,,,,,,0,0,6.0,21.0,00:32,13:07,1687
+3,15:00,17,8,MUHL,1,10,12,MOR,Run,8.0,4,MOR,Ian Csicsek,,,,,,,,,,,,,,,,,,,,,,,,,Colin Conway,,,,,,,,,,,,,,,,,0,0,6.0,21.0,00:32,12:34,1654
+3,12:02,17,9,MUHL,2,2,4,MOR,Pass,4.0,0,MOR,,,Joe Repetti,,,Matt McKenna,Complete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,,,,0,6,6.0,21.0,00:14,12:02,1622
+3,12:02,17,10,MUHL,1,3,3,MOR,Extra Pt.,,,,,,,,,,,,,,,,Alex Garrido,,,,,,,Kick,Good,,,,,,,,,,,,,,,,,,,,,,0,1,6.0,27.0,00:00,11:48,1608
+3,12:02,17,11,MUHL,1,35,-35,MUHL,Kickoff,,,,,,,,,,,,,,,,C Fenstermaker,60,MOR,5,Fair Catch,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,6.0,28.0,00:00,11:48,1608
+3,12:02,18,4,MOR,1,10,-25,MOR,Run,0.0,25,MOR,Nate Boyle,,,,,,,,,,,,,,,,,,,,,,,,,Tyler Ekstrom,,,,,,,,,,,,,,,,,0,0,6.0,28.0,00:29,11:48,1608
+3,12:02,18,5,MOR,2,10,-25,MOR,Pass,0.0,,,,,Jared Jenkins,,,Jordan Bingham,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,6.0,28.0,00:14,11:19,1579
+3,12:02,18,6,MOR,3,10,-25,MOR,Pass,-6.0,19,MOR,,,Jared Jenkins,,,,Sack,,,,,,,,,,,,,,,,,,,K McDowdell,,,,,,,,,,,,,,,,,0,0,6.0,28.0,00:14,11:04,1564
+3,10:50,18,7,MOR,4,16,-19,MOR,Run,-19.0,0,MOR,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,2,6.0,28.0,00:26,10:50,1550
+3,10:50,18,9,MOR,1,20,-20,MOR,Kickoff,,,,,,,,,,,,,,,,Jared Jenkins,35,MUHL,45,Return,,,,,Tommy Donnelly,9,MOR,46,Chris Ortalano,Nick Coffaro,,,,,,,,,,,,,,,,0,0,6.0,30.0,00:13,10:24,1524
+3,10:50,19,2,MUHL,1,10,46,MOR,Pass,14.0,32,MOR,,,Joe Repetti,,,Matthew Manning,Complete,,,,,,,,,,,,,,,,,,,Nick Coffaro,,,,,,,,,,,,,,,,,0,0,6.0,30.0,00:13,10:12,1512
+3,10:50,19,3,MUHL,1,10,32,MOR,Run,8.0,24,MOR,Matthew Manning,,,,,,,,,,,,,,,,,,,,,,,,,Jackson Lake,,,,,,,,,,,,,,,,,0,0,6.0,30.0,00:26,09:59,1499
+3,09:33,19,4,MUHL,2,2,24,MOR,Run,24.0,0,MOR,Matthew Manning,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,,,,0,6,6.0,30.0,00:03,09:33,1473
+3,09:33,19,5,MUHL,1,3,3,MOR,Extra Pt.,,,,,,,,,,,,,,,,Alex Garrido,,,,,,,Kick,Good,,,,,,,,,,,,,,,,,,,,,,0,1,6.0,36.0,00:00,09:30,1470
+3,09:33,19,6,MUHL,1,35,-35,MUHL,Kickoff,,,,,,,,,,,,,,,,C Fenstermaker,55,MOR,10,Return,,,,,Camron Tinajero,9,MOR,19,Tyler Ekstrom,,,,,,,,,,,,,,,,,0,0,6.0,37.0,00:02,09:30,1470
+3,09:28,20,2,MOR,1,10,-19,MOR,Run,0.0,19,MOR,Camron Tinajero,,,,,,,,,,,,,,,,,,,,,,,,,J Armstrong,,,,,,,,,,,,,,,,,0,0,6.0,37.0,00:31,09:28,1468
+3,09:28,20,3,MOR,2,10,-19,MOR,Penalty,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,False Start,,MOR,5,,,,,0,0,6.0,37.0,00:16,08:57,1437
+3,09:28,20,4,MOR,2,15,-14,MOR,Pass,0.0,,,,,Jared Jenkins,,,Brad Bryan,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,Pass Interference,,MUHL,15,,1.0,,,0,0,6.0,37.0,00:16,08:41,1421
+3,09:28,20,5,MOR,1,10,-29,MOR,Run,2.0,31,MOR,Camron Tinajero,,,,,,,,,,,,,,,,,,,,,,,,,Tyler Ekstrom,,,,,,,,,,,,,,,,,0,0,6.0,37.0,00:31,08:25,1405
+3,09:28,20,6,MOR,2,8,-31,MOR,Pass,0.0,,,,,Jared Jenkins,,,Jordan Lewis,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,6.0,37.0,00:16,07:54,1374
+3,09:28,20,8,MOR,3,8,-31,MOR,Pass,8.0,39,MOR,,,Jared Jenkins,,,Tim Garlick,Complete,,,,,,,,,,,,,,,,,,,Matt Giuliano,,,,,,,,,,,,,,,,,0,0,6.0,37.0,00:16,07:38,1358
+3,09:28,20,9,MOR,1,10,-39,MOR,Run,6.0,45,MOR,LJ Cooper,,,,,,,,,,,,,,,,,,,,,,,,,Matt Giuliano,Tim Higgins,,,,,,,,,,,,,,,,0,0,6.0,37.0,00:31,07:22,1342
+3,09:28,20,10,MOR,2,4,-45,MOR,Run,2.0,47,MOR,LJ Cooper,,,,,,,,,,,,,,,,,,,,,,,,,Derek Graichen,,,,,,,,,,,,,,,,,0,0,6.0,37.0,00:31,06:51,1311
+3,09:28,20,11,MOR,3,2,-47,MOR,Run,1.0,48,MOR,LJ Cooper,,,,,,,,,,,,,,,,,,,,,,,,,Peyton Elliott,Owen Kovacs,,,,,,,,,,,,,,,,0,0,6.0,37.0,00:31,06:20,1280
+3,09:28,20,12,MOR,4,1,-48,MOR,Run,-1.0,47,MOR,LJ Cooper,,,,,,,,,,,,,,,,,,,,,,,,,Tyler Ekstrom,Matt Papa,,,,,,,,,,,,,,,,0,0,6.0,37.0,00:31,05:48,1248
+3,05:17,21,2,MUHL,1,10,47,MOR,Run,9.0,38,MOR,Timothy Buda,,,,,,,,,,,,,,,,,,,,,,,,,Isaiah Johnson,Clay Basile,,,,,,,,,,,,,,,,0,0,6.0,37.0,00:20,05:17,1217
+3,05:17,21,3,MUHL,2,1,38,MOR,Run,7.0,31,MOR,Ian Csicsek,,,,,,,,,,,,,,,,,,,,,,,,,EJ Boney,Clay Basile,,,,,,,,,,,,,,,,0,0,6.0,37.0,00:20,04:57,1197
+3,05:17,21,4,MUHL,1,10,31,MOR,Penalty,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,Personal Foul,,MOR,15,,,,,0,0,6.0,37.0,00:10,04:37,1177
+3,05:17,21,5,MUHL,1,10,16,MOR,Run,3.0,13,MOR,Ian Csicsek,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Holding,,MUHL,10,,,,,0,0,6.0,37.0,00:20,04:27,1167
+3,04:07,21,6,MUHL,1,17,23,MOR,Pass,23.0,0,MOR,,,Joe Repetti,,,Matt McKenna,Complete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,,,,0,6,6.0,37.0,00:02,04:07,1147
+3,04:07,21,7,MUHL,1,3,3,MOR,Extra Pt.,,,,,,,,,,,,,,,,Nick Stannard,,,,,,,Kick,Good,,,,,,,,,,,,,,,,,,,,,,0,1,6.0,43.0,00:00,04:05,1145
+3,04:07,21,8,MUHL,1,35,-35,MUHL,Kickoff,,,,,,,,,,,,,,,,Ayden Scharper,54,MOR,11,Return,,,,,Nick Coffaro,16,MOR,27,Matt Giuliano,,,,,,,,,,,,,,,,,0,0,6.0,44.0,00:02,04:05,1145
+3,04:02,22,2,MOR,1,10,-27,MOR,Pass,49.0,24,MUHL,,,Jared Jenkins,,,Brad Bryan,Complete,,,,,,,,,,,,,,,,,,,Owen Kovacs,,,,,,,,,,,,,,,,,0,0,6.0,44.0,00:25,04:02,1142
+3,04:02,22,3,MOR,1,10,24,MUHL,Pass,4.0,20,MUHL,,,Jared Jenkins,,,Bryan Monge,Complete,,,,,,,,,,,,,,,,,,,Matt Giuliano,John Lohrer,,,,,,,,,,,,,,,,0,0,6.0,44.0,00:25,03:37,1117
+3,04:02,22,4,MOR,2,6,20,MUHL,Run,4.0,16,MUHL,Nate Boyle,,,,,,,,,,,,,,,,,,,,,,,,,Tim Higgins,Derek Graichen,,,,,,,,,,,,,,,,0,0,6.0,44.0,00:51,03:11,1091
+3,04:02,22,5,MOR,3,2,16,MUHL,Pass,11.0,5,MUHL,,,Jared Jenkins,,,Bryan Monge,Complete,,,,,,,,,,,,,,,,,,,Alex Batista,,,,,,,,,,,,,,,,,0,0,6.0,44.0,00:25,02:21,1041
+3,04:02,22,6,MOR,1,5,5,MUHL,Pass,0.0,,,,,Jared Jenkins,,,Brad Bryan,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,6.0,44.0,00:25,01:55,1015
+3,01:30,22,7,MOR,2,5,5,MUHL,Run,5.0,0,MUHL,Nate Boyle,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,,,,6,0,6.0,44.0,00:03,01:30,990
+3,01:30,22,8,MOR,1,3,3,MUHL,2 Pt.,,,,,,Jared Jenkins,,,,,,,,,,,,,,,,,Pass,,,,,,,,,,,,,,,,,,,,,,,0,0,12.0,44.0,00:03,01:27,987
+3,01:30,22,9,MOR,1,35,-35,MOR,Kickoff,,,,,,,,,,,,,,,,Jackson Lake,41,MUHL,24,Return,,,,,Joshua Castro,13,MUHL,37,Nick Weston,Colin Conway,,,,,,,,,,,,,,,,0,0,12.0,44.0,00:03,01:25,985
+3,01:22,23,2,MUHL,1,10,-37,MUHL,Run,3.0,40,MUHL,Brett Confer,,,,,,,,,,,,,,,,,,,,,,,,,Jashon Teller,,,,,,,,,,,,,,,,,0,0,12.0,44.0,00:41,01:22,982
+3,01:22,23,3,MUHL,2,7,-40,MUHL,Run,4.0,44,MUHL,Matthew Manning,,,,,,,,,,,,,,,,,,,,,,,,,Jeremy McGuigan,,,,,,,,,,,,,,,,,0,0,12.0,44.0,00:41,00:41,941
+4,15:00,24,2,MUHL,3,3,-44,MUHL,Penalty,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,False Start,,MUHL,5,,,,,0,0,12.0,44.0,00:05,15:00,900
+4,15:00,24,3,MUHL,3,8,-39,MUHL,Pass,0.0,,,,,Brett Confer,,,Caden Reph,Incomplete,,,,Chris Ortalano,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,12.0,44.0,00:05,14:55,895
+4,15:00,24,4,MUHL,4,8,-39,MUHL,Punt,,,,,,,,,,,,,,,,Ayden Scharper,46,MOR,15,Out Of Bounds,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,12.0,44.0,00:05,14:49,889
+4,14:44,25,2,MOR,1,10,-15,MOR,Run,4.0,19,MOR,LJ Cooper,,,,,,,,,,,,,,,,,,,,,,,,,Tim Higgins,,,,,,,,,,,,,,,,,0,0,12.0,44.0,00:29,14:44,884
+4,14:44,25,3,MOR,2,6,-19,MOR,Run,2.0,21,MOR,LJ Cooper,,,,,,,,,,,,,,,,,,,,,,,,,Josh Ferro,,,,,,,,,,,,,,,,,0,0,12.0,44.0,00:29,14:15,855
+4,14:44,25,4,MOR,3,4,-21,MOR,Pass,0.0,,,,,Jared Jenkins,,,Brad Bryan,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,12.0,44.0,00:14,13:47,827
+4,14:44,25,5,MOR,4,4,-21,MOR,Punt,,,,,,,,,,,,,,,,Colin Conway,29,,50,Downed,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,12.0,44.0,00:14,13:32,812
+4,13:18,26,2,MUHL,1,10,50,MUHL,Run,8.0,42,MOR,Ian Csicsek,,,,,,,,,,,,,,,,,,,,,,,,,Chris Ortalano,EJ Harvey,,,,,,,,,,,,,,,,0,0,12.0,44.0,00:44,13:18,798
+4,13:18,26,3,MUHL,2,2,42,MOR,Pass,0.0,,,,,Brett Confer,,,Caden Reph,Incomplete,,,,Chris Ortalano,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,12.0,44.0,00:22,12:34,754
+4,13:18,26,4,MUHL,3,2,42,MOR,Run,3.0,39,MOR,John Sauchelli,,,,,,,,,,,,,,,,,,,,,,,,,Chris Ortalano,,,,,,,,,,,,,,,,,0,0,12.0,44.0,00:44,12:12,732
+4,13:18,26,5,MUHL,1,10,39,MOR,Run,12.0,27,MOR,Ian Csicsek,,,,,,,,,,,,,,,,,,,,,,,,,Damere Rooker,,,,,,,,,,,,,,,,,0,0,12.0,44.0,00:44,11:27,687
+4,13:18,26,6,MUHL,1,10,27,MOR,Run,6.0,21,MOR,Ian Csicsek,,,,,,,,,,,,,,,,,,,,,,,,,Clay Basile,,,,,,,,,,,,,,,1.0,,0,0,12.0,44.0,00:22,10:43,643
+4,10:21,26,7,MUHL,2,4,21,MOR,Timeout,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,12.0,44.0,00:15,10:21,621
+4,10:21,26,8,MUHL,2,4,21,MOR,Run,4.0,17,MOR,Tommy Donnelly,,,,,,,,,,,,,,,,,,,,,,,,,Clay Basile,,,,,,,,,,,,,,,,,0,0,12.0,44.0,00:31,10:06,606
+4,09:35,26,9,MUHL,1,10,17,MOR,Run,17.0,0,MOR,Tommy Donnelly,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,,,,0,6,12.0,44.0,00:05,09:35,575
+4,09:35,26,10,MUHL,1,3,3,MOR,Extra Pt.,,,,,,,,,,,,,,,,Nick Stannard,,,,,,,Kick,Good,,,,,,,,,,,,,,,,,,,,,,0,1,12.0,50.0,00:00,09:30,570
+4,09:35,26,11,MUHL,1,35,-35,MUHL,Kickoff,,,,,,,,,,,,,,,,Ayden Scharper,57,MOR,8,Return,,,,,Nick Coffaro,50,MUHL,42,Ayden Scharper,,,,,,,,,,,,,,,,,0,0,12.0,51.0,00:05,09:30,570
+4,09:25,27,2,MOR,1,10,42,MUHL,Run,1.0,41,MUHL,Mike Willis,,,,,,,,,,,,,,,,,,,,,,,,,Tim Higgins,Blaze Curry,,,,,,,,,,,,,,,,0,0,12.0,51.0,00:31,09:25,565
+4,09:25,27,3,MOR,2,9,41,MUHL,Pass,9.0,32,MUHL,,,Jared Jenkins,,,Tim Garlick,Complete,,,,,,,,,,,,,,,,,,,Marcus McClaine,,,,,,,,,,,,,,,,,0,0,12.0,51.0,00:15,08:54,534
+4,09:25,27,4,MOR,1,10,32,MUHL,Pass,11.0,21,MUHL,,,Jared Jenkins,,,Tim Garlick,Complete,,,,,,,,,,,,,,,,,,,Tim Higgins,Isaiah Williams,,,,,,,,,,,,,,,,0,0,12.0,51.0,00:15,08:39,519
+4,09:25,27,5,MOR,1,10,21,MUHL,Run,1.0,20,MUHL,Mike Willis,,,,,,,,,,,,,,,,,,,,,,,,,Derek Rosenow,Isaiah Williams,,,,,,,,,,,,,,,,0,0,12.0,51.0,00:31,08:23,503
+4,09:25,27,6,MOR,2,9,20,MUHL,Run,9.0,11,MUHL,Jared Jenkins,,,,,,,,,,,,,,,,,,,,,,,,,Derek Rosenow,,,,,,,,,,,,,,,,,0,0,12.0,51.0,00:31,07:53,473
+4,09:25,27,7,MOR,1,10,11,MUHL,Pass,0.0,,,,,Jared Jenkins,,,Jordan Bingham,Incomplete,,,,Isaiah Williams,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,12.0,51.0,00:15,07:22,442
+4,09:25,27,8,MOR,2,10,11,MUHL,Pass,0.0,,,,,Jared Jenkins,,,Tim Garlick,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,12.0,51.0,00:15,07:07,427
+4,09:25,27,9,MOR,3,10,11,MUHL,Pass,-11.0,22,MUHL,,,Jared Jenkins,,,,Sack,,,,,,,,,,,,,,,,,,,Derek Graichen,,,,,,,,,,,,,,,,,0,0,12.0,51.0,00:15,06:51,411
+4,09:25,27,10,MOR,4,21,22,MUHL,Penalty,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,Personal Foul,,MOR,15,,,,,0,0,12.0,51.0,00:15,06:36,396
+4,09:25,27,11,MOR,4,36,37,MUHL,Pass,0.0,,,,,Jared Jenkins,,,Tim Garlick,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,12.0,51.0,00:15,06:20,380
+4,06:05,28,2,MUHL,1,10,-37,MUHL,Run,1.0,38,MUHL,Bryson Perryman,,,,,,,,,,,,,,,,,,,,,,,,,Prince Sokpo,EJ Boney,,,,,,,,,,,,,,,,0,0,12.0,51.0,00:43,06:05,365
+4,06:05,28,3,MUHL,2,9,-38,MUHL,Run,4.0,42,MUHL,Bryson Perryman,,,,,,,,,,,,,,,,,,,,,,,,,EJ Harvey,Isaiah Johnson,,,,,,,,,,,,,,,,0,0,12.0,51.0,00:43,05:22,322
+4,06:05,28,4,MUHL,3,5,-42,MUHL,Pass,4.0,46,MUHL,,,Brett Confer,,,Dominic Strain,Complete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,12.0,51.0,00:22,04:39,279
+4,06:05,28,5,MUHL,4,1,-46,MUHL,Punt,,,,,,,,,,,,,,,,Ayden Scharper,32,MOR,22,Fair Catch,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,12.0,51.0,00:22,04:17,257
+4,03:56,29,2,MOR,1,10,-22,MOR,Run,1.0,23,MOR,Parker Miller,,,,,,,,,,,,,,,,,,,,,,,,,Alex Schafer,,,,,,,,,,,,,,,,,0,0,12.0,51.0,00:35,03:56,236
+4,03:56,29,3,MOR,2,9,-23,MOR,Run,-3.0,20,MOR,Parker Miller,,,,,,,,,,,,,,,,,,,,,,,,,Derek Graichen,,,,,,,,,,,,,,,,,0,0,12.0,51.0,00:35,03:21,201
+4,03:56,29,4,MOR,3,12,-20,MOR,Pass,0.0,,,,,Carter Hallgren,,,Nick Coffaro,Incomplete,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,12.0,51.0,00:18,02:46,166
+4,03:56,29,5,MOR,4,12,-20,MOR,Punt,,,,,,,,,,,,,,,,Colin Conway,52,MUHL,28,Downed,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,12.0,51.0,00:18,02:28,148
+4,02:11,30,2,MUHL,1,10,-28,MUHL,Run,4.0,32,MUHL,I SchafferNeitz,,,,,,,,,,,,,,,,,,,,,,,,,Josh Ruela,Zach Scillia,,,,,,,,,,,,,,,,0,0,12.0,51.0,00:44,02:11,131
+4,02:11,30,3,MUHL,2,6,-32,MUHL,Run,0.0,32,MUHL,I SchafferNeitz,,,,,,,,,,,,,,,,,,,,,,,,,EJ Harvey,,,,,,,,,,,,,,,,,0,0,12.0,51.0,00:44,01:27,87
+4,02:11,30,4,MUHL,3,6,-32,MUHL,Run,13.0,45,MUHL,I SchafferNeitz,,,,,,,,,,,,,,,,,,,,,,,,,Isaiah Johnson,Zach Scillia,,,,,,,,,,,,,,,,0,0,12.0,51.0,00:44,00:44,44
