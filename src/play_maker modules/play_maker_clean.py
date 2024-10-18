@@ -26,17 +26,23 @@ pd.set_option('display.max_columns', None)
 # url = 'https://godiplomats.com/sports/football/stats/2023/lebanon-valley-college/boxscore/12182'
 # url = 'https://muhlenbergsports.com/sports/football/stats/2023/moravian/boxscore/5074'
 # url = 'https://bryantbulldogs.com/sports/fball/2023-24/boxscores/20230909_f6un.xml'
-url = 'https://mgoblue.com/sports/football/stats/2023/iowa/boxscore/26469'
+# url = 'https://mgoblue.com/sports/football/stats/2023/iowa/boxscore/26469'
+url = 'https://mgoblue.com/sports/football/stats/2023/bowling-green/boxscore/25649'
+# url = 'https://mgoblue.com/sports/football/stats/2024/texas/boxscore/27055'
+# url = 'https://mgoblue.com/sports/football/stats/2023/penn-state/boxscore/25656'
 # url = 'https://www.ecgulls.com/sports/fball/2023-24/boxscores/20230922_4bl7.xml'
 # url = 'https://wnegoldenbears.com/sports/football/stats/2023/endicott-college/boxscore/8093'
 # url = 'https://eurekareddevils.com/sports/fball/2022-23/boxscores/20221015_crvm.xml'
 # url = 'https://wcupagoldenrams.com/sports/football/stats/2023/bloomsburg-university/boxscore/9890'
+# url = 'https://msuspartans.com/sports/football/stats/2024/boston-college/boxscore/16521'
+# url = 'https://utsports.com/sports/football/stats/2024/oklahoma/boxscore/28877'
 
 
 # BS object of just the play-by-play
 soup = pot(headers, url, strainer = SoupStrainer(id='play-by-play'))
 # print(soup.prettify())
 presto = False
+new_nsa = False
 print('len of soup', len(soup))
 # getting the box score for presto sport
 if len(soup) < 1:
@@ -66,11 +72,8 @@ else:
     df, nombre = nsa_playmaker(soup, nombre)
     print('peaches')
 
-print(nombre)
-print(type(df))
-
-
-
+# print(nombre)
+# print(type(df))
 
 # Identify R/P/K play types
 df['play_type'] = np.where(df.play_str.str.contains(' rush'), 'Run', 
